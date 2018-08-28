@@ -4,6 +4,7 @@
 package sn.objis.venteVehicule.domaine;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author diawara
@@ -15,10 +16,9 @@ public class Commande {
 	private Date dateCommande;
 	private Date dateReception;
 	private boolean validee;
-	private String livree;
-	private double taxes;
 	private long idClient;
-	private long idAuto;
+	private List<Automobile> listeAutos;
+	
 	
 	//Constructeur
 	/**
@@ -28,27 +28,39 @@ public class Commande {
 		super();
 	}
 
-	/**
-	 * @param dateCommande
-	 * @param dateReception
-	 * @param validee
-	 * @param livree
-	 * @param taxes
-	 */
-	public Commande(Date dateCommande, Date dateReception, boolean validee, String livree, double taxes) {
+	
+	
+	public Commande(long idCommande, Date dateCommande, Date dateReception, boolean validee, long idClient,
+			List<Automobile> listeAutos) {
 		super();
+		this.idCommande = idCommande;
 		this.dateCommande = dateCommande;
 		this.dateReception = dateReception;
 		this.validee = validee;
-		this.livree = livree;
-		this.taxes = taxes;
+		this.idClient = idClient;
+		this.listeAutos = listeAutos;
 	}
-	
+
+
+
 	//Getters et setters
+	
 
 	public long getIdCommande() {
 		return idCommande;
 	}
+
+	public List<Automobile> getListeAutos() {
+		return listeAutos;
+	}
+
+
+
+	public void setListeAutos(List<Automobile> listeAutos) {
+		this.listeAutos = listeAutos;
+	}
+
+
 
 	public void setIdCommande(long idCommande) {
 		this.idCommande = idCommande;
@@ -78,21 +90,7 @@ public class Commande {
 		this.validee = validee;
 	}
 
-	public String getLivree() {
-		return livree;
-	}
 
-	public void setLivree(String livree) {
-		this.livree = livree;
-	}
-
-	public double getTaxes() {
-		return taxes;
-	}
-
-	public void setTaxes(double taxes) {
-		this.taxes = taxes;
-	}
 
 	public long getIdClient() {
 		return idClient;
@@ -102,13 +100,7 @@ public class Commande {
 		this.idClient = idClient;
 	}
 
-	public long getIdAuto() {
-		return idAuto;
-	}
-
-	public void setIdAuto(long idAuto) {
-		this.idAuto = idAuto;
-	}
+	
 	
 	
 	
