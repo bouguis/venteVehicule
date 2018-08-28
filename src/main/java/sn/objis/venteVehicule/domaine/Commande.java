@@ -7,15 +7,13 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author diawara
+ * @author HP
  *
  */
 public class Commande {
 	//Proprietes
 	private long idCommande;
 	private Date dateCommande;
-	private Date dateReception;
-	private boolean validee;
 	private long idClient;
 	private List<Automobile> listeAutos;
 	
@@ -30,13 +28,10 @@ public class Commande {
 
 	
 	
-	public Commande(long idCommande, Date dateCommande, Date dateReception, boolean validee, long idClient,
-			List<Automobile> listeAutos) {
+	public Commande(long idCommande, Date dateCommande, long idClient, List<Automobile> listeAutos) {
 		super();
 		this.idCommande = idCommande;
 		this.dateCommande = dateCommande;
-		this.dateReception = dateReception;
-		this.validee = validee;
 		this.idClient = idClient;
 		this.listeAutos = listeAutos;
 	}
@@ -73,24 +68,6 @@ public class Commande {
 	public void setDateCommande(Date dateCommande) {
 		this.dateCommande = dateCommande;
 	}
-
-	public Date getDateReception() {
-		return dateReception;
-	}
-
-	public void setDateReception(Date dateReception) {
-		this.dateReception = dateReception;
-	}
-
-	public boolean isValidee() {
-		return validee;
-	}
-
-	public void setValidee(boolean validee) {
-		this.validee = validee;
-	}
-
-
 
 	public long getIdClient() {
 		return idClient;
