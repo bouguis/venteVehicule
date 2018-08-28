@@ -18,6 +18,7 @@ public class Automobile {
 	private String couleur;
 	private double prix;
 	private int nombre;
+	private int nbrPlace;
 	
 	//Constructeur
 	/**
@@ -122,6 +123,14 @@ public class Automobile {
 
 	public void setNombre(int nombre) {
 		this.nombre = nombre;
+	}
+	
+	public int getNbrPlace() {
+		return nbrPlace;
+	}
+
+	public void setNbrPlace(int nbr) {
+		this.nbrPlace = nbr;
 	}
 	
 	
