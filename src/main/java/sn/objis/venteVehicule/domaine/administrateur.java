@@ -4,7 +4,7 @@
 package sn.objis.venteVehicule.domaine;
 
 /**
- * @author diawara
+ * @author HP
  *
  */
 public class administrateur {
