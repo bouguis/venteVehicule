@@ -33,7 +33,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="resources/css/util.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/img.css">
 <!--===============================================================================================-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 <body class="animsition">
 	
@@ -80,7 +82,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Home</a>
+								<a href="acceuil">Acceuil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html">Homepage 1</a></li>
 									<li><a href="home-02.html">Homepage 2</a></li>
@@ -89,23 +91,23 @@
 							</li>
 
 							<li>
-								<a href="product.html">Shop</a>
+								<a href="product.html">Catalogue</a>
 							</li>
 
 							<li class="label1" data-label1="hot">
-								<a href="shoping-cart.html">Features</a>
+								<a href="formulaire">Gestion Catalogue</a>
 							</li>
 
 							<li>
-								<a href="blog.html">Blog</a>
+								<a href="blog.html">Solde</a>
 							</li>
 
 							<li>
-								<a href="about.html">About</a>
+								<a href="about.html">A Propos</a>
 							</li>
 
 							<li>
-								<a href="contact.html">Contact</a>
+								<a href="contact.html">Nous Contactez</a>
 							</li>
 						</ul>
 					</div>	
@@ -191,7 +193,7 @@
 
 			<ul class="main-menu-m">
 				<li>
-					<a href="index.html">Home</a>
+					<a href="acceuil">Acceuil</a>
 					<ul class="sub-menu-m">
 						<li><a href="index.html">Homepage 1</a></li>
 						<li><a href="home-02.html">Homepage 2</a></li>
@@ -203,23 +205,23 @@
 				</li>
 
 				<li>
-					<a href="product.html">Shop</a>
+					<a href="product.html">Catalogue</a>
 				</li>
 
 				<li>
-					<a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+					<a href="formulaire" class="label1 rs1" data-label1="hot">Gestion Catalogue</a>
 				</li>
 
 				<li>
-					<a href="blog.html">Blog</a>
+					<a href="blog.html">Solde</a>
 				</li>
 
 				<li>
-					<a href="about.html">About</a>
+					<a href="about.html">A Propos</a>
 				</li>
 
 				<li>
-					<a href="contact.html">Contact</a>
+					<a href="contact.html">Nous Contactez</a>
 				</li>
 			</ul>
 		</div>
@@ -332,7 +334,7 @@
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(resources/images/slide-01.jpg);">
+				<div class="item-slick1" style="background-image: url(resources/images/bmw-serie-2.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -356,7 +358,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(resources/images/slide-02.jpg);">
+				<div class="item-slick1" style="background-image: url(resources/images/slider002.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
@@ -380,7 +382,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1" style="background-image: url(resources/images/slide-03.jpg);">
+				<div class="item-slick1" style="background-image: url(resources/images/troc.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
@@ -503,27 +505,27 @@
 			<div class="flex-w flex-sb-m p-b-52">
 				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-						All Products
+						Catalogue
 					</button>
 
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-						Women
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".BMW">
+						BMW
 					</button>
 
-					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-						Men
+					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".mercedes">
+						Mercedes benz
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-						Bag
+						Renault
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
-						Shoes
+						Volkswagen
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-						Watches
+						Chevrelet
 					</button>
 				</div>
 
@@ -741,13 +743,15 @@
 					</div>
 				</div>
 			</div>
-
+            
+          
 			<div class="row isotope-grid">
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/product-01.jpg" alt="IMG-PRODUCT">
+							<img src="resources/images/bmw-serie-2.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -757,7 +761,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Esprit Ruffle Shirt
+									Bmw SERIE 2 2018
 								</a>
 
 								<span class="stext-105 cl3">
@@ -775,11 +779,11 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/product-02.jpg" alt="IMG-PRODUCT">
+							<img src="resources/images/bmw-x6.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -789,7 +793,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Herschel supply
+									 Bmw X6 2018
 								</a>
 
 								<span class="stext-105 cl3">
@@ -806,13 +810,14 @@
 						</div>
 					</div>
 				</div>
+				
+				              
 
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item men">
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">		 
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/product-03.jpg" alt="IMG-PRODUCT">
-
+								<img src="resources/images/mercedes1.jpeg" alt="IMG-PRODUCT">				
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
 							</a>
@@ -821,7 +826,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Only Check Trouser
+									Mercedes 2018
 								</a>
 
 								<span class="stext-105 cl3">
@@ -839,11 +844,11 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/product-04.jpg" alt="IMG-PRODUCT">
+							<img src="resources/images/bmw-serie-3-gt.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -853,7 +858,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Classic Trench Coat
+									 Bmw Serie 3 gt
 								</a>
 
 								<span class="stext-105 cl3">
@@ -1063,11 +1068,11 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item men">
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/product-11.jpg" alt="IMG-PRODUCT">
+							<img src="resources/images/mercedes2.jpeg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -1077,7 +1082,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Herschel supply 
+									Mercedes 2017
 								</a>
 
 								<span class="stext-105 cl3">
@@ -1095,11 +1100,11 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item men">
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/product-12.jpg" alt="IMG-PRODUCT">
+							<img src="resources/images/mercedes3.jpeg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -1109,7 +1114,7 @@
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Herschel supply
+									Mercedes 2016
 								</a>
 
 								<span class="stext-105 cl3">
@@ -1254,7 +1259,9 @@
 						</div>
 					</div>
 				</div>
+					
 			</div>
+		
 
 			<!-- Load more -->
 			<div class="flex-c-m flex-w w-full p-t-45">
@@ -1674,6 +1681,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</script>
 <!--===============================================================================================-->
 	<script src="resources/js/main.js"></script>
-
+	<script src="resources/js/img.js"></script>
+	<!-- pagination d'un tableau bootstrp -->
+    <script src="resources/js/script.js" type="text/javascript"></script>
+    <script src="resources/js/jquery-dataTable.min.js" type="text/javascript"></script>
+    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </body>
 </html>
