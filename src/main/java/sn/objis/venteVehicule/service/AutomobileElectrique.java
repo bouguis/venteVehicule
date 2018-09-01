@@ -4,6 +4,11 @@ import sn.objis.venteVehicule.domaine.Automobile;
 
 public class AutomobileElectrique extends AutoAbstraite {
 	
+	public AutomobileElectrique(String description) {
+		super(description);
+		// TODO Auto-generated constructor stub
+	}
+
 	Automobile auto;
 	
 	public void afficherCaracteristiques() {

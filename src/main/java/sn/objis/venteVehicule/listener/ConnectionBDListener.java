@@ -57,7 +57,7 @@ public class ConnectionBDListener implements ServletContextListener {
 		try {
 			// Etape1: Recupération d'une reference vers la source de donnée
 			Context cntx = new InitialContext();
-			ds = (DataSource) cntx.lookup("java:jboss/AutoDS");
+			// ds = (DataSource) cntx.lookup("java:jboss/AutoDS");
 
 			// Etape2:Récuperation d'une connexion à partir du pool de connexion
 			con = ds.getConnection();

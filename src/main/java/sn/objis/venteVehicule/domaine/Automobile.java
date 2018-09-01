@@ -16,6 +16,7 @@ public class Automobile {
 	private String couleur;
 	private double prix;
 	private int nbrPlace;
+	private String description;
 	
 	//Constructeurs
 	
@@ -24,7 +25,7 @@ public class Automobile {
 	}
 	
 	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
-			int nbrPlace) {
+			int nbrPlace, String description) {
 		super();
 		this.idAuto = idAuto;
 		this.moteur = moteur;
@@ -33,6 +34,7 @@ public class Automobile {
 		this.couleur = couleur;
 		this.prix = prix;
 		this.nbrPlace = nbrPlace;
+		this.description = description;
 	}
 
 
@@ -94,6 +96,14 @@ public class Automobile {
 
 	public void setMarque(String marque) {
 		this.marque = marque;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	
 	
