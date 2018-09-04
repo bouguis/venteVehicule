@@ -37,10 +37,14 @@ public class Automobile {
 		this.description = description;
 	}
 
-
-
+	public Automobile(String moteurRecuperer, String marqueRecuperer, String modelRecuperer, String couleurRecuperer,
+			Double prixRecuperer, int nbrPlaceRecuperer, String descriptionRecuperer) {
+		// TODO Auto-generated constructor stub
+	}
 
 	//Getters et Setters
+
+	
 
 	public long getIdAuto() {
 		return idAuto;

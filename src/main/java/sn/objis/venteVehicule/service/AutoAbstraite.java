@@ -2,7 +2,7 @@ package sn.objis.venteVehicule.service;
 
 import sn.objis.venteVehicule.domaine.Automobile;
 
-public abstract class AutoAbstraite extends ObjetBase implements Cloneable  {
+public abstract class AutoAbstraite extends ObjetBase implements Cloneable, IElement {
 	
 	Automobile auto = null;
 	 String description = auto.getDescription();
@@ -26,5 +26,10 @@ public abstract class AutoAbstraite extends ObjetBase implements Cloneable  {
 		return auto;
 	}
 
+	public void affiche() {
+		
+		System.out.println("Description du vehicule : " + description);
+		
+	}
 	public abstract void afficherCaracteristiques();
 }
