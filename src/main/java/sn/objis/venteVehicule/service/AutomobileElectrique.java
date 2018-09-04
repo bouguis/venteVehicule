@@ -18,4 +18,10 @@ public class AutomobileElectrique extends AutoAbstraite {
 				auto.getNbrPlace() + " et son prix est de " + auto.getPrix() + ".");
 	}
 
+	@Override
+	public boolean motCleValide(String motCle) {
+		
+		return descript.indexOf(motCle) != -1;
+	}
+
 }
