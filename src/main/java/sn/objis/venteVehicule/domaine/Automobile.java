@@ -3,6 +3,8 @@
  */
 package sn.objis.venteVehicule.domaine;
 
+import java.sql.Blob;
+
 /**
  * @author HP
  *
@@ -10,6 +12,7 @@ package sn.objis.venteVehicule.domaine;
 public class Automobile {
 	//Proprietes
 	private long idAuto;
+	private Blob photo;
 	private String moteur;
 	private String marque;
 	private String model;
@@ -18,16 +21,18 @@ public class Automobile {
 	private int nbrPlace;
 	private String description;
 	
+	
 	//Constructeurs
 	
 	public Automobile() {
 		super();
 	}
 	
-	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
+	public Automobile(long idAuto, Blob photo, String moteur, String marque, String model, String couleur, double prix,
 			int nbrPlace, String description) {
 		super();
 		this.idAuto = idAuto;
+		this.photo = photo;
 		this.moteur = moteur;
 		this.marque = marque;
 		this.model = model;
@@ -37,7 +42,7 @@ public class Automobile {
 		this.description = description;
 	}
 
-	public Automobile(String moteurRecuperer, String marqueRecuperer, String modelRecuperer, String couleurRecuperer,
+	public Automobile(Blob photo,String moteurRecuperer, String marqueRecuperer, String modelRecuperer, String couleurRecuperer,
 			Double prixRecuperer, int nbrPlaceRecuperer, String descriptionRecuperer) {
 		// TODO Auto-generated constructor stub
 	}
@@ -108,6 +113,14 @@ public class Automobile {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Blob getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(Blob photo) {
+		this.photo = photo;
 	}
 	
 	

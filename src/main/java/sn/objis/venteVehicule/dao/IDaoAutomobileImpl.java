@@ -1,5 +1,6 @@
 package sn.objis.venteVehicule.dao;
 
+import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -25,7 +26,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 			// Etape 1 : Preparation de la requête
 
-			String sql = " INSERT INTO automobile(moteur, marque, model, couleur, prix, nbrPlace, description )  VALUES(?,?,?,?,?,?,?)";
+			String sql = " INSERT INTO automobile(photo, moteur, marque, model, couleur, prix, nbrPlace, description )  VALUES(?,?,?,?,?,?,?,?)";
 
 			//Récupération d'une Zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
@@ -45,6 +46,8 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			pst.setInt(6, t.getNbrPlace());
 			
 			pst.setString(7, t.getDescription());
+			
+			pst.setBlob(8, t.getPhoto());
 
 			// Etape 3 : Execution e la requête
 
@@ -78,6 +81,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 			// Etape 3 : Traitement des données du resultat de la requête
 	 		while (rs.next()) {
+	 			Blob photoRecuperer = rs.getBlob("photo");
 				String moteurRecuperer = rs.getString("moteur");
 				String marqueRecuperer = rs.getString("marque");
 				String modelRecuperer = rs.getString("model");
@@ -86,7 +90,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
 
-		Automobile a = new Automobile(moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer);
+		Automobile a = new Automobile(photoRecuperer, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer);
 				listeAuto.add(a);
 			}
 
@@ -104,20 +108,21 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 		try {
 
 			// Etape 1 : Préparation de la Requête
-			String sql = "UPDATE automoble SET moteur=?, marque=?, model=?, couleur=?, prix=?, nbrPlace=?, description=? WHERE id_agentmairie=? ";
+			String sql = "UPDATE automoble SET moteur=?, marque=?, model=?, couleur=?, prix=?, nbrPlace=?, description=?, photo=? WHERE id_agentmairie=? ";
 
 			//Recuperation d'une zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
 
 			// Etape 2 : Transmission des valeurs aux paramétres de la requête
 			
-			pst.setString(1, t.getMoteur());
-			pst.setString(2, t.getMarque());
-			pst.setString(3, t.getModel());
-			pst.setString(4, t.getCouleur());
-			pst.setDouble(5, t.getPrix());
-			pst.setInt(6, t.getNbrPlace());
-			pst.setString(7, t.getDescription());
+			pst.setBlob(1, t.getPhoto());
+			pst.setString(2, t.getMoteur());
+			pst.setString(3, t.getMarque());
+			pst.setString(4, t.getModel());
+			pst.setString(5, t.getCouleur());
+			pst.setDouble(6, t.getPrix());
+			pst.setInt(7, t.getNbrPlace());
+			pst.setString(8, t.getDescription());
 			
 			//Etape 3 : Execution de la requête
 			
@@ -185,6 +190,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			while (rs.next()) {
 
 				long idAuto = rs.getLong("id_automobile");
+				Blob photo = rs.getBlob("photo");
 				String moteur = rs.getString("moteur");
 				String marque = rs.getString("marque");
 				String model = rs.getString("model");
@@ -193,7 +199,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlace = rs.getInt("nbrPlace");
 				String description = rs.getString("description");
 				
-				auto = new Automobile(idAuto, moteur, 
+				auto = new Automobile(idAuto,photo, moteur, 
 						marque, model, couleur, prix, nbrPlace, description);
 
 			}
