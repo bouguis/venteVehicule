@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import sn.objis.venteVehicule.domaine.Automobile;
+import sn.objis.venteVehicule.service.AutoAbstraite;
 
 public class IDaoAutomobileImpl implements IDaoAutomobile{
 	
@@ -20,7 +20,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public void ajouter(Automobile t) {
+	public void ajouter(AutoAbstraite t) {
 		
 		try {
 
@@ -65,8 +65,8 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public List<Automobile> getAll() {
-		List<Automobile> listeAuto = new ArrayList<>();
+	public List<AutoAbstraite> getAll() {
+		List<AutoAbstraite> listeAuto = new ArrayList<>();
 
 		try {
 
@@ -90,7 +90,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
 
-		Automobile a = new Automobile(photoRecuperer, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer);
+		AutoAbstraite a = new AutoAbstraite(photoRecuperer, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer);
 				listeAuto.add(a);
 			}
 
@@ -103,7 +103,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public void update(Automobile t) {
+	public void update(AutoAbstraite t) {
 		
 		try {
 
@@ -139,7 +139,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public void delete(Automobile t) {
+	public void delete(AutoAbstraite t) {
 
 		try {
 			
@@ -167,8 +167,8 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public Automobile findbyId(long id) {
-		Automobile auto = null;
+	public AutoAbstraite findbyId(long id) {
+		AutoAbstraite auto = null;
 		try {
 
 			// Etape 1 : Preparation de la requête
@@ -199,7 +199,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlace = rs.getInt("nbrPlace");
 				String description = rs.getString("description");
 				
-				auto = new Automobile(idAuto,photo, moteur, 
+				auto = new AutoAbstraite(idAuto, photo, moteur, 
 						marque, model, couleur, prix, nbrPlace, description);
 
 			}
@@ -212,4 +212,5 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 		return auto;
 	}
 
+	
 }

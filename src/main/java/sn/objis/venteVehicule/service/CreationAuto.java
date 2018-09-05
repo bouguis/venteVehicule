@@ -1,10 +1,13 @@
 package sn.objis.venteVehicule.service;
 
-import sn.objis.venteVehicule.domaine.Automobile;
+import sn.objis.venteVehicule.dao.IDaoAutomobile;
+
 
 public class CreationAuto {
 	
-	protected AutoAbstraite modelAuto;
+	IDaoAutomobile dao = null;
+	
+	protected AutoAbstraite modelAuto = null;
 
 	public CreationAuto(AutoAbstraite modelAuto) {
 		super();
@@ -19,9 +22,10 @@ public class CreationAuto {
 		this.modelAuto = modelAuto;
 	}
 	
-	Automobile creerAutomobile() {
-		if (modelAuto == null)
-			return null;
+	AutoAbstraite creeAutomobile()
+	{
+	if (modelAuto == null)
+		return null;
 		return modelAuto.reproduire();
 	}
 
