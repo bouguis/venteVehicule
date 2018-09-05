@@ -1,5 +1,9 @@
 package sn.objis.venteVehicule.dao;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,25 +12,36 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+
 import sn.objis.venteVehicule.domaine.Automobile;
 
 public class IDaoAutomobileImpl implements IDaoAutomobile{
 	
 	private Connection con;
+	File f;
+	FileInputStream istreamImage = null;
+	
+	
 
 	public IDaoAutomobileImpl(Connection con) {
 		super();
 		this.con = con;
 	}
+	
 
 	@Override
 	public void ajouter(Automobile t) {
 		
+		
+		
 		try {
+			f = new File("/home/diawara/Bureau/voitures"+ "/" + t.getPhoto());
+			 istreamImage = new FileInputStream(f);
 
 			// Etape 1 : Preparation de la requête
 
-			String sql = " INSERT INTO automobile(photo, moteur, marque, model, couleur, prix, nbrPlace, description )  VALUES(?,?,?,?,?,?,?,?)";
+			String sql = " INSERT INTO automobile( moteur, marque, model, couleur, prix, nbrPlace, description, photo )  VALUES(?,?,?,?,?,?,?,?)";
 
 			//Récupération d'une Zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
@@ -47,16 +62,15 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			
 			pst.setString(7, t.getDescription());
 			
-			pst.setBlob(8, t.getPhoto());
+			pst.setBinaryStream(8, istreamImage, (int)f.length());
 
 			// Etape 3 : Execution e la requête
-
 			pst.executeUpdate();
 			
 			System.out.println("Ajout  Reussi !!!");
 
 
-		} catch (SQLException e) {
+		} catch (SQLException | FileNotFoundException e)  {
 			System.out.println("Probleme de requête SQL");
 			e.printStackTrace();
 		}
@@ -90,8 +104,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
 
-		Automobile a = new Automobile(photoRecuperer, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer);
-				listeAuto.add(a);
+		
 			}
 
 		} catch (SQLException e) {
@@ -115,7 +128,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 			// Etape 2 : Transmission des valeurs aux paramétres de la requête
 			
-			pst.setBlob(1, t.getPhoto());
+			pst.setString(1, t.getPhoto());
 			pst.setString(2, t.getMoteur());
 			pst.setString(3, t.getMarque());
 			pst.setString(4, t.getModel());
@@ -199,8 +212,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlace = rs.getInt("nbrPlace");
 				String description = rs.getString("description");
 				
-				auto = new Automobile(idAuto,photo, moteur, 
-						marque, model, couleur, prix, nbrPlace, description);
+			
 
 			}
 

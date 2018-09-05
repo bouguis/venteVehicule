@@ -361,7 +361,7 @@
             <div class="wizard-container">
 
                 <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                    <form action="" method="">
+                    <form action="ajout" method="post">
                 <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
 
                     	<div class="wizard-header">
@@ -386,9 +386,10 @@
                                   <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
                                   <div class="col-sm-4 col-sm-offset-1">
                                      <div class="picture-container">
+                                     <!--  -->
                                           <div class="picture">
                                               <img src="resources/assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                              <input type="file" id="wizard-picture">
+                                              <input type="file" id="wizard-picture" name="photo">
                                           </div>
                                           <h6>Voiture</h6>
                                       </div>
@@ -431,7 +432,7 @@
                                     <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-3">
                                             <div class="choice" data-toggle="wizard-checkbox" style="color: #A9A9A9" >
-                                                <input type="checkbox" name="gris" value="Design">
+                                                <input type="checkbox" name="couleur" value="gris">
                                                 <div class="icon"  style="color: #A9A9A9" >
                                                     <i class="fa fa-car"></i>
                                                 </div>
@@ -440,7 +441,7 @@
                                         </div>
                                         <div class="col-sm-3" >
                                             <div class="choice" data-toggle="wizard-checkbox"  style="color: red">
-                                                <input type="checkbox" name="rouge" value="Code">
+                                                <input type="checkbox" name="couleur" value="rouge">
                                                 <div class="icon"  style="color: red">
                                                     <i class="fa fa-car"></i>
                                                 </div>
@@ -450,7 +451,7 @@
                                         </div>
                                         <div class="col-sm-3">
                                             <div class="choice" data-toggle="wizard-checkbox" style="color: #000000">
-                                                <input type="checkbox" name="blanc" value="Develop">
+                                                <input type="checkbox" name="couleur" value="blanc">
                                                 <div class="icon">
                                                     <i class="fa fa-car"></i>
                                                 </div>
@@ -460,7 +461,7 @@
                                         </div>
                                          <div class="col-sm-3">
                                             <div class="choice" data-toggle="wizard-checkbox" style="color: #191970">
-                                                <input type="checkbox" name="bleu" value="Develop">
+                                                <input type="checkbox" name="couleur" value="bleu">
                                                 <div class="icon" style="color: #191970">
                                                     <i class="fa fa-car"></i>
                                                 </div>
@@ -495,7 +496,7 @@
                         <div class="wizard-footer height-wizard">
                             <div class="pull-right">
                                 <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
+                                <input type="submit"  class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name="action" value='Finish' />
 
                             </div>
 

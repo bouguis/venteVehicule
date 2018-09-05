@@ -3,6 +3,7 @@
  */
 package sn.objis.venteVehicule.domaine;
 
+import java.io.FileInputStream;
 import java.sql.Blob;
 
 /**
@@ -12,7 +13,7 @@ import java.sql.Blob;
 public class Automobile {
 	//Proprietes
 	private long idAuto;
-	private Blob photo;
+	private String photo ;
 	private String moteur;
 	private String marque;
 	private String model;
@@ -28,11 +29,9 @@ public class Automobile {
 		super();
 	}
 	
-	public Automobile(long idAuto, Blob photo, String moteur, String marque, String model, String couleur, double prix,
-			int nbrPlace, String description) {
+	public Automobile(  String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description, String photo) {
 		super();
-		this.idAuto = idAuto;
-		this.photo = photo;
 		this.moteur = moteur;
 		this.marque = marque;
 		this.model = model;
@@ -40,11 +39,22 @@ public class Automobile {
 		this.prix = prix;
 		this.nbrPlace = nbrPlace;
 		this.description = description;
+		this.photo = photo;
 	}
 
-	public Automobile(Blob photo,String moteurRecuperer, String marqueRecuperer, String modelRecuperer, String couleurRecuperer,
-			Double prixRecuperer, int nbrPlaceRecuperer, String descriptionRecuperer) {
-		// TODO Auto-generated constructor stub
+	
+	
+
+	public Automobile(String moteur, String marque, String model, String couleur, double prix, int nbrPlace,
+			String description) {
+		super();
+		this.moteur = moteur;
+		this.marque = marque;
+		this.model = model;
+		this.couleur = couleur;
+		this.prix = prix;
+		this.nbrPlace = nbrPlace;
+		this.description = description;
 	}
 
 	//Getters et Setters
@@ -115,11 +125,11 @@ public class Automobile {
 		this.description = description;
 	}
 
-	public Blob getPhoto() {
+	public String getPhoto() {
 		return photo;
 	}
 
-	public void setPhoto(Blob photo) {
+	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
 	
