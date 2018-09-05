@@ -8,7 +8,7 @@ public class AutoAbstraite extends ObjetBase implements Cloneable, IElement {
 	
 	Automobile auto = null;
 	 long idAuto = auto.getIdAuto();
-	 Blob photo = auto.getPhoto();
+	 String photo = auto.getPhoto() ;
 	 String moteur = auto.getMoteur();
 	 String marque = auto.getMarque();
 	 String model = auto.getModel();
@@ -17,8 +17,8 @@ public class AutoAbstraite extends ObjetBase implements Cloneable, IElement {
 	 int nbrPlace = auto.getNbrPlace();
 	 String description = auto.getDescription();
 	 
-	 public AutoAbstraite(Blob photo, String moteur, String marque, String model, String couleur, Double prix,
-			int nbrPlace, String description) {
+	 public AutoAbstraite(String moteur, String marque, String model, String couleur, double prix, int nbrPlace,
+				String description, String photo)  {
 		super();
 		this.photo = photo;
 		this.moteur = moteur;
@@ -30,8 +30,8 @@ public class AutoAbstraite extends ObjetBase implements Cloneable, IElement {
 		this.description = description;
 	}
 
-	public AutoAbstraite(long idAuto, Blob photo, String moteur, String marque, String model, String couleur,
-			Double prix, int nbrPlace, String description) {
+	public AutoAbstraite(long idAuto, String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description, String photo) {
 		super();
 		this.idAuto = idAuto;
 		this.photo = photo;
@@ -44,11 +44,11 @@ public class AutoAbstraite extends ObjetBase implements Cloneable, IElement {
 		this.description = description;
 	}
 
-	public Blob getPhoto() {
+	public String getPhoto() {
 		return photo;
 	}
 
-	public void setPhoto(Blob photo) {
+	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
 

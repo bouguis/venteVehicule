@@ -361,7 +361,7 @@
             <div class="wizard-container">
 
                 <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                    <form action="" method="">
+                    <form action="ajout" method="post">
                 <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
 
                     	<div class="wizard-header">
@@ -373,9 +373,8 @@
 
 						<div class="wizard-navigation">
 							<ul>
-	                            <li><a href="#about" data-toggle="tab">About</a></li>
-	                            <li><a href="#account" data-toggle="tab">Account</a></li>
-	                            <li><a href="#address" data-toggle="tab">Address</a></li>
+	                            <li><a href="#about" data-toggle="tab">Autres Caracteristiques</a></li>
+	                            <li><a href="#account" data-toggle="tab">Couleur</a></li>
 	                             <li><a href="#description" data-toggle="tab">Description</a></li>
 	                        </ul>
 
@@ -387,62 +386,86 @@
                                   <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
                                   <div class="col-sm-4 col-sm-offset-1">
                                      <div class="picture-container">
+                                     <!--  -->
                                           <div class="picture">
                                               <img src="resources/assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                              <input type="file" id="wizard-picture">
+                                              <input type="file" id="wizard-picture" name="photo">
                                           </div>
-                                          <h6>Choose Picture</h6>
+                                          <h6>Voiture</h6>
                                       </div>
                                   </div>
                                   <div class="col-sm-6">
                                       <div class="form-group">
-                                        <label>First Name <small>(required)</small></label>
-                                        <input name="firstname" type="text" class="form-control" placeholder="Andrew...">
+                                        <label>Moteur <small>(required)</small></label>
+                                        <input name="moteur" type="text" class="form-control" placeholder="Expl:">
                                       </div>
                                       <div class="form-group">
-                                        <label>Last Name <small>(required)</small></label>
-                                        <input name="lastname" type="text" class="form-control" placeholder="Smith...">
+                                        <label>Marque <small>(required)</small></label>
+                                        <input name="marque" type="text" class="form-control" placeholder="Expl:">
                                       </div>
                                   </div>
                                   <div class="col-sm-10 col-sm-offset-1">
                                       <div class="form-group">
-                                          <label>Email <small>(required)</small></label>
-                                          <input name="email" type="email" class="form-control" placeholder="andrew@creative-tim.com">
+                                          <label>Model <small>(required)</small></label>
+                                          <input name="model" type="email" class="form-control" placeholder="Expl:">
                                       </div>
+                                      
                                   </div>
+                                  <div class="col-sm-10 col-sm-offset-1">
+                                         <div class="form-group">
+                                            <label>Prix</label>
+                                            <input type="text" name="prix" class="form-control" placeholder="1200000f">
+                                          </div>
+                                    </div>
+                                     <div class="col-sm-10 col-sm-offset-1">
+                                         <div class="form-group">
+                                            <label>Nombres de Places</label>
+                                            <input type="text" name="nombre" class="form-control" placeholder="5">
+                                          </div>
+                                    </div>
                               </div>
                             </div>
                             <div class="tab-pane" id="account">
-                                <h4 class="info-text"> What are you doing? (checkboxes) </h4>
+                                <h4 class="info-text"> Choisissez votre couleur</h4>
                                 <div class="row">
 
                                     <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Design">
-                                                <div class="icon">
-                                                    <i class="fa fa-pencil"></i>
+                                        <div class="col-sm-3">
+                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #A9A9A9" >
+                                                <input type="checkbox" name="couleur" value="gris">
+                                                <div class="icon"  style="color: #A9A9A9" >
+                                                    <i class="fa fa-car"></i>
                                                 </div>
-                                                <h6>Design</h6>
+                                                <h6>Gris</h6>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Code">
-                                                <div class="icon">
-                                                    <i class="fa fa-terminal"></i>
+                                        <div class="col-sm-3" >
+                                            <div class="choice" data-toggle="wizard-checkbox"  style="color: red">
+                                                <input type="checkbox" name="couleur" value="rouge">
+                                                <div class="icon"  style="color: red">
+                                                    <i class="fa fa-car"></i>
                                                 </div>
-                                                <h6>Code</h6>
+                                                <h6>Rouge</h6>
                                             </div>
 
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Develop">
+                                        <div class="col-sm-3">
+                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #000000">
+                                                <input type="checkbox" name="couleur" value="blanc">
                                                 <div class="icon">
-                                                    <i class="fa fa-laptop"></i>
+                                                    <i class="fa fa-car"></i>
                                                 </div>
-                                                <h6>Develop</h6>
+                                                <h6>Blanc</h6>
+                                            </div>
+
+                                        </div>
+                                         <div class="col-sm-3">
+                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #191970">
+                                                <input type="checkbox" name="couleur" value="bleu">
+                                                <div class="icon" style="color: #191970">
+                                                    <i class="fa fa-car"></i>
+                                                </div>
+                                                <h6>Bleu</h6>
                                             </div>
 
                                         </div>
@@ -450,61 +473,21 @@
 
                                 </div>
                             </div>
-                            <div class="tab-pane" id="address">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <h4 class="info-text"> Are you living in a nice area? </h4>
-                                    </div>
-                                    <div class="col-sm-7 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Street Name</label>
-                                            <input type="text" class="form-control" placeholder="5h Avenue">
-                                          </div>
-                                    </div>
-                                    <div class="col-sm-3">
-                                         <div class="form-group">
-                                            <label>Street Number</label>
-                                            <input type="text" class="form-control" placeholder="242">
-                                          </div>
-                                    </div>
-                                    <div class="col-sm-5 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>City</label>
-                                            <input type="text" class="form-control" placeholder="New York...">
-                                          </div>
-                                    </div>
-                                    <div class="col-sm-5">
-                                         <div class="form-group">
-                                            <label>Country</label><br>
-                                             <select name="country" class="form-control">
-                                                <option value="Afghanistan"> Afghanistan </option>
-                                                <option value="Albania"> Albania </option>
-                                                <option value="Algeria"> Algeria </option>
-                                                <option value="American Samoa"> American Samoa </option>
-                                                <option value="Andorra"> Andorra </option>
-                                                <option value="Angola"> Angola </option>
-                                                <option value="Anguilla"> Anguilla </option>
-                                                <option value="Antarctica"> Antarctica </option>
-                                                <option value="...">...</option>
-                                            </select>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                               <div class="tab-pane" id="description">
                                 <div class="row">
-                                    <h4 class="info-text"> description </h4>
+                                    <h4 class="info-text">  </h4>
                                     <div class="col-sm-6 col-sm-offset-1">
                                          <div class="form-group">
-                                            <label>Boat description</label>
-                                            <textarea class="form-control" placeholder="" rows="9">
+                                            <label> Description</label>
+                                            <textarea class="form-control" name="description" placeholder="" rows="9">
                                             </textarea>
                                           </div>
                                     </div>
                                     <div class="col-sm-4">
                                          <div class="form-group">
-                                            <label>Example</label>
-                                            <p class="description">"The boat really nice name is recognized as being a really awesome boat. We use it every sunday when we go fishing and we catch a lot. It has some kind of magic shield around it."</p>
+                                            <label></label>
+                                            
                                           </div>
                                     </div>
                                 </div>
@@ -513,7 +496,7 @@
                         <div class="wizard-footer height-wizard">
                             <div class="pull-right">
                                 <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
+                                <input type="submit"  class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name="action" value='Finish' />
 
                             </div>
 

@@ -268,8 +268,9 @@ h1 .subtitle {
   font-weight: 500;
 }
 .wizard-card[data-color="azzure"] .choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
-  border-color: #2CA8FF;
+  border-color:  #2CA8FF;
 }
+
 .wizard-card[data-color="azzure"] .picture:hover {
   border-color: #2CA8FF;
 }
@@ -366,13 +367,14 @@ h1 .subtitle {
   height: 116px;
   width: 116px;
   border-radius: 50%;
-  background-color: #999999;
+  background-color: ;
   color: #FFFFFF;
   margin: 0 auto 20px;
   border: 4px solid #CCCCCC;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
+
 .wizard-card .choice i {
   font-size: 30px;
   line-height: 111px;
@@ -967,4 +969,7 @@ label small {
   .btn-wd {
     min-width: 140px;
   }
+}
+.icon{
+	background-color: red;
 }
