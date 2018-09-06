@@ -26,7 +26,7 @@ public class IServiceAutomobileImpl implements IServiceAutomobile {
 
 	
 	@Override
-	public List<AutoAbstraite> findAll() {
+	public List<Automobile> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -35,7 +35,7 @@ public class IServiceAutomobileImpl implements IServiceAutomobile {
 	 * @see sn.objis.venteVehicule.service.IService#maj(java.lang.Object)
 	 */
 	@Override
-	public void maj(AutoAbstraite t) {
+	public void maj(Automobile t) {
 		// TODO Auto-generated method stub
 
 	}
@@ -44,7 +44,7 @@ public class IServiceAutomobileImpl implements IServiceAutomobile {
 	 * @see sn.objis.venteVehicule.service.IService#supprimer(java.lang.Object)
 	 */
 	@Override
-	public void supprimer(AutoAbstraite t) {
+	public void supprimer(Automobile t) {
 		// TODO Auto-generated method stub
 
 	}
@@ -53,14 +53,14 @@ public class IServiceAutomobileImpl implements IServiceAutomobile {
 	 * @see sn.objis.venteVehicule.service.IService#rechercherId(long)
 	 */
 	@Override
-	public AutoAbstraite rechercherId(long id) {
+	public Automobile rechercherId(long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
-	public void add(AutoAbstraite t) {
+	public void add(Automobile t) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -3,8 +3,6 @@ package sn.objis.venteVehicule.dao;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,7 +10,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import sn.objis.venteVehicule.service.AutoAbstraite;
+
+import sn.objis.venteVehicule.domaine.Automobile;
 
 public class IDaoAutomobileImpl implements IDaoAutomobile{
 	
@@ -29,7 +28,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	
 
 	@Override
-	public void ajouter(AutoAbstraite t) {
+	public void ajouter(Automobile t) {
 		
 		
 		
@@ -77,8 +76,8 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public List<AutoAbstraite> getAll() {
-		List<AutoAbstraite> listeAuto = new ArrayList<>();
+	public List<Automobile> getAll() {
+		List<Automobile> listeAuto = new ArrayList<>();
 
 		try {
 
@@ -102,7 +101,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
 				
-				AutoAbstraite auto = new AutoAbstraite(moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, photoRecuperer);
+				Automobile auto = new Automobile(moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, photoRecuperer);
 				listeAuto.add(auto);
 			}
 
@@ -115,7 +114,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public void update(AutoAbstraite t) {
+	public void update(Automobile t) {
 		
 		try {
 
@@ -151,7 +150,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public void delete(AutoAbstraite t) {
+	public void delete(Automobile t) {
 
 		try {
 			
@@ -179,8 +178,8 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	}
 
 	@Override
-	public AutoAbstraite findbyId(long id) {
-		AutoAbstraite auto = null;
+	public Automobile findbyId(long id) {
+		Automobile auto = null;
 		try {
 
 			// Etape 1 : Preparation de la requête
@@ -211,7 +210,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlace = rs.getInt("nbrPlace");
 				String description = rs.getString("description");
 			
-			auto = new AutoAbstraite(idAuto, moteur, marque, model, couleur, prix, nbrPlace, description, photo);
+			auto = new Automobile(idAuto, moteur, marque, model, couleur, prix, nbrPlace, description, photo);
 
 			}
 		} catch (SQLException e) {

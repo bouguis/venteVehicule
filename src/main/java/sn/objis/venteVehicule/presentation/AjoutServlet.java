@@ -3,7 +3,6 @@ package sn.objis.venteVehicule.presentation;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Blob;
 import java.sql.Connection;
 
 import javax.servlet.RequestDispatcher;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import sn.objis.venteVehicule.domaine.Automobile;
-import sn.objis.venteVehicule.service.AutoAbstraite;
 import sn.objis.venteVehicule.service.IServiceAutomobileImpl;
 
 /**
@@ -67,7 +65,7 @@ public class AjoutServlet extends HttpServlet {
 		//Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
 		IServiceAutomobileImpl service = new IServiceAutomobileImpl(con);
-		AutoAbstraite auto = new AutoAbstraite(moteur, marque, model, couleur, prix, nbrPlace, descrip, file);
+		Automobile auto = new Automobile(moteur, marque, model, couleur, prix, nbrPlace, descrip, file);
 		service.add(auto);
 		// Utilisation d'un scope pour afficher
 		

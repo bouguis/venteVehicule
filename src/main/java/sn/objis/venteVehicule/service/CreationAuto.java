@@ -1,32 +1,9 @@
 package sn.objis.venteVehicule.service;
+import sn.objis.venteVehicule.domaine.Automobile;
 
-import sn.objis.venteVehicule.dao.IDaoAutomobile;
 
-
-public class CreationAuto {
+public interface CreationAuto {
 	
-	IDaoAutomobile dao = null;
-	
-	protected AutoAbstraite modelAuto = null;
-
-	public CreationAuto(AutoAbstraite modelAuto) {
-		super();
-		this.modelAuto = modelAuto;
-	}
-
-	public AutoAbstraite getModelAuto() {
-		return modelAuto;
-	}
-
-	public void setModelAuto(AutoAbstraite modelAuto) {
-		this.modelAuto = modelAuto;
-	}
-	
-	AutoAbstraite creeAutomobile()
-	{
-	if (modelAuto == null)
-		return null;
-		return modelAuto.reproduire();
-	}
+	public void creerAutomobile(Automobile auto);
 
 }
