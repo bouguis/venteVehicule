@@ -3,8 +3,6 @@
  */
 package sn.objis.venteVehicule.domaine;
 
-import java.io.FileInputStream;
-import java.sql.Blob;
 
 /**
  * @author HP
@@ -13,7 +11,6 @@ import java.sql.Blob;
 public class Automobile {
 	//Proprietes
 	private long idAuto;
-	private String photo ;
 	private String moteur;
 	private String marque;
 	private String model;
@@ -22,6 +19,7 @@ public class Automobile {
 	private int nbrPlace;
 	private String description;
 	private String type;
+	private String photo ;
 	
 	
 	//Constructeurs
@@ -32,6 +30,7 @@ public class Automobile {
 	
 	public Automobile(  String moteur, String marque, String model, String couleur, double prix,
 			int nbrPlace, String description,String type, String photo ) {
+
 		super();
 		this.moteur = moteur;
 		this.marque = marque;
@@ -48,7 +47,7 @@ public class Automobile {
 	
 
 	public Automobile(String moteur, String marque, String model, String couleur, double prix, int nbrPlace,
-			String description) {
+			String description, String photo) {
 		super();
 		this.moteur = moteur;
 		this.marque = marque;
@@ -57,7 +56,24 @@ public class Automobile {
 		this.prix = prix;
 		this.nbrPlace = nbrPlace;
 		this.description = description;
-		
+
+	}
+	
+	
+
+	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description, String type, String photo) {
+		super();
+		this.idAuto = idAuto;
+		this.moteur = moteur;
+		this.marque = marque;
+		this.model = model;
+		this.couleur = couleur;
+		this.prix = prix;
+		this.nbrPlace = nbrPlace;
+		this.description = description;
+		this.type = type;
+		this.photo = photo;
 	}
 
 	//Getters et Setters

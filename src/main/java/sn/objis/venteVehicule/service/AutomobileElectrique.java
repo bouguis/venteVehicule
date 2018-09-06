@@ -2,13 +2,9 @@ package sn.objis.venteVehicule.service;
 
 import sn.objis.venteVehicule.domaine.Automobile;
 
-public class AutomobileElectrique extends AutoAbstraite {
+public class AutomobileElectrique extends Automobile {
 	
-	public AutomobileElectrique(String description) {
-		super(description);
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	Automobile auto;
 	
 	public void afficherCaracteristiques() {
@@ -18,10 +14,6 @@ public class AutomobileElectrique extends AutoAbstraite {
 				auto.getNbrPlace() + " et son prix est de " + auto.getPrix() + ".");
 	}
 
-	@Override
-	public boolean motCleValide(String motCle) {
-		
-		return descript.indexOf(motCle) != -1;
-	}
+	
 
 }

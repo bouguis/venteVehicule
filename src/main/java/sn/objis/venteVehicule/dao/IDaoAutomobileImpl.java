@@ -3,8 +3,7 @@ package sn.objis.venteVehicule.dao;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.sql.Blob;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,7 +11,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
 
 import sn.objis.venteVehicule.domaine.Automobile;
 
@@ -96,7 +94,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 			// Etape 3 : Traitement des données du resultat de la requête
 	 		while (rs.next()) {
-	 			Blob photoRecuperer = rs.getBlob("photo");
+	 			String photoRecuperer = rs.getString("photo");
 				String moteurRecuperer = rs.getString("moteur");
 				String marqueRecuperer = rs.getString("marque");
 				String modelRecuperer = rs.getString("model");
@@ -104,8 +102,9 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				Double prixRecuperer = rs.getDouble("prix");
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
-
-		
+				
+				Automobile auto = new Automobile(moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, photoRecuperer);
+				listeAuto.add(auto);
 			}
 
 		} catch (SQLException e) {
@@ -204,7 +203,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			while (rs.next()) {
 
 				long idAuto = rs.getLong("id_automobile");
-				Blob photo = rs.getBlob("photo");
+				String photo = rs.getString("photo");
 				String moteur = rs.getString("moteur");
 				String marque = rs.getString("marque");
 				String model = rs.getString("model");
@@ -212,11 +211,11 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				Double prix = rs.getDouble("prix");
 				int nbrPlace = rs.getInt("nbrPlace");
 				String description = rs.getString("description");
-				
+				String type = rs.getString("type");
 			
+			auto = new Automobile(idAuto, moteur, marque, model, couleur, prix, nbrPlace, description, type, photo);
 
 			}
-
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -225,4 +224,5 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 		return auto;
 	}
 
+	
 }

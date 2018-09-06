@@ -2,12 +2,9 @@ package sn.objis.venteVehicule.service;
 
 import sn.objis.venteVehicule.domaine.Automobile;
 
-public class AutomobileEssence extends AutoAbstraite {
+public class AutomobileEssence extends Automobile {
 	
-	public AutomobileEssence(String description) {
-		super(description);
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	Automobile auto;
 	
@@ -17,10 +14,6 @@ public class AutomobileEssence extends AutoAbstraite {
 	auto.getNbrPlace() + " et son prix est de " + auto.getPrix() + ".");
 	}
 
-	@Override
-	public boolean motCleValide(String motCle) {
-		
-		return descript.indexOf(motCle) != -1;
-	}
+	
 
 }
