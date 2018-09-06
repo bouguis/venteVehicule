@@ -1,5 +1,6 @@
 package sn.objis.venteVehicule.presentation;
 
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import sn.objis.venteVehicule.domaine.Automobile;
+import sn.objis.venteVehicule.service.CreationAutoElectrique;
+import sn.objis.venteVehicule.service.CreationAutoEssence;
 /**
  * Servlet implementation class AjoutServlet
  */
@@ -20,6 +23,7 @@ public class AjoutServlet extends HttpServlet {
 	Connection con;
 	File f;
 	FileInputStream istreamImage = null;
+	Automobile auto;
 	
        
     public AjoutServlet(Connection con) {
@@ -63,6 +67,38 @@ public class AjoutServlet extends HttpServlet {
 		
 		//Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
+		
+		CreationAutoElectrique electrique = new CreationAutoElectrique(con);
+		CreationAutoEssence essence = new CreationAutoEssence(con);
+		auto = new Automobile();
+		if (type.equalsIgnoreCase("essence")) {
+			auto.setMoteur(moteur);
+			auto.setMarque(marque);
+			auto.setModel(model);
+			auto.setCouleur(couleur);
+			auto.setPrix(prix);
+			auto.setNbrPlace(nbrPlace);
+			auto.setDescription(descrip);
+			auto.setPhoto(file);
+			auto.setType(type);
+			essence.creerAutomobile(auto);
+			
+		}else if (type.equalsIgnoreCase("electrique")) {
+			auto.setMoteur(moteur);
+			auto.setMarque(marque);
+			auto.setModel(model);
+			auto.setCouleur(couleur);
+			auto.setPrix(prix);
+			auto.setNbrPlace(nbrPlace);
+			auto.setDescription(descrip);
+			auto.setPhoto(file);
+			auto.setType(type);
+			electrique.creerAutomobile(auto);
+			
+			
+		}else {
+			System.out.println("Veuillez choisir Essence ou Electrique");
+		}
 
 		
 
