@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import sn.objis.venteVehicule.domaine.Automobile;
+import sn.objis.venteVehicule.service.CreationAuto;
 import sn.objis.venteVehicule.service.IServiceAutomobileImpl;
 
 /**
@@ -60,14 +61,16 @@ public class AjoutServlet extends HttpServlet {
 		int  nbrPlace  = Integer.parseInt(request.getParameter("nombre"));
 		String descrip = request.getParameter("description");
 		String file = request.getParameter("photo");
+		String type = request.getParameter("auto");
 		
 		
 		
 		//Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
-		IServiceAutomobileImpl service = new IServiceAutomobileImpl(con);
-		Automobile auto = new Automobile( moteur, marque, model, couleur, prix, nbrPlace, descrip, file);
-		service.add(auto);
+		//IServiceAutomobileImpl service = new IServiceAutomobileImpl(con);
+		CreationAuto creer = new CreationAuto(con);
+		Automobile auto = new Automobile( moteur, marque, model, couleur, prix, nbrPlace, descrip, type, file);
+		creer.creerAutomobile(auto);
 		// Utilisation d'un scope pour afficher
 		
 		// Redirection

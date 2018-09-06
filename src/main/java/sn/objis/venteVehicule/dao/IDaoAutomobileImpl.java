@@ -41,7 +41,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 			// Etape 1 : Preparation de la requête
 
-			String sql = " INSERT INTO automobile( moteur, marque, model, couleur, prix, nbrPlace, description, photo )  VALUES(?,?,?,?,?,?,?,?)";
+			String sql = " INSERT INTO automobile( moteur, marque, model, couleur, prix, nbrPlace, description,type, photo )  VALUES(?,?,?,?,?,?,?,?,?)";
 
 			//Récupération d'une Zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
@@ -61,8 +61,9 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			pst.setInt(6, t.getNbrPlace());
 			
 			pst.setString(7, t.getDescription());
+			pst.setString(8, t.getType());
 			
-			pst.setBinaryStream(8, istreamImage, (int)f.length());
+			pst.setBinaryStream(9, istreamImage, (int)f.length());
 
 			// Etape 3 : Execution e la requête
 			pst.executeUpdate();

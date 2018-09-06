@@ -21,6 +21,7 @@ public class Automobile {
 	private double prix;
 	private int nbrPlace;
 	private String description;
+	private String type;
 	
 	
 	//Constructeurs
@@ -30,7 +31,7 @@ public class Automobile {
 	}
 	
 	public Automobile(  String moteur, String marque, String model, String couleur, double prix,
-			int nbrPlace, String description, String photo) {
+			int nbrPlace, String description,String type, String photo ) {
 		super();
 		this.moteur = moteur;
 		this.marque = marque;
@@ -40,6 +41,7 @@ public class Automobile {
 		this.nbrPlace = nbrPlace;
 		this.description = description;
 		this.photo = photo;
+		this.type = type;
 	}
 
 	
@@ -55,6 +57,7 @@ public class Automobile {
 		this.prix = prix;
 		this.nbrPlace = nbrPlace;
 		this.description = description;
+		
 	}
 
 	//Getters et Setters
@@ -131,6 +134,14 @@ public class Automobile {
 
 	public void setPhoto(String photo) {
 		this.photo = photo;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 	
 	

@@ -1,28 +1,36 @@
 package sn.objis.venteVehicule.service;
 
+import java.sql.Connection;
+
+import sn.objis.venteVehicule.dao.IDaoAutomobileImpl;
 import sn.objis.venteVehicule.domaine.Automobile;
 
 public class CreationAuto {
+	Connection con;
+	private IDaoAutomobileImpl dao;
 	
-	protected AutoAbstraite modelAuto;
-
-	public CreationAuto(AutoAbstraite modelAuto) {
+	
+	public CreationAuto(Connection con) {
 		super();
-		this.modelAuto = modelAuto;
+		this.con = con;
+		dao = new IDaoAutomobileImpl(con);
 	}
 
+	protected AutoAbstraite exempleAuto;
+
+	
+
 	public AutoAbstraite getModelAuto() {
-		return modelAuto;
+		return  exempleAuto;
 	}
 
 	public void setModelAuto(AutoAbstraite modelAuto) {
-		this.modelAuto = modelAuto;
+		this. exempleAuto = modelAuto;
 	}
 	
-	Automobile creerAutomobile() {
-		if (modelAuto == null)
-			return null;
-		return modelAuto.reproduire();
+	public void creerAutomobile(Automobile t) {
+		
+		  dao.ajouter(t);;
 	}
 
 }

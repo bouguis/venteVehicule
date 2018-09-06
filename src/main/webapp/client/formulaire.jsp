@@ -423,6 +423,15 @@
                                             <input type="text" name="nombre" class="form-control" placeholder="5">
                                           </div>
                                     </div>
+                                     <div class="col-sm-10 col-sm-offset-1">
+                                         <div class="form-group">
+                                            <label>Type de vehicule</label><br>
+                                             <select name="auto" class="form-control">
+                                                <option value="electrique">Electrique</option>
+                                                <option value="essence">Essence</option>
+                                            </select>
+                                          </div>
+                                    </div>
                               </div>
                             </div>
                             <div class="tab-pane" id="account">
