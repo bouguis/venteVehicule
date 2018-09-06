@@ -11,7 +11,6 @@ package sn.objis.venteVehicule.domaine;
 public class Automobile {
 	//Proprietes
 	private long idAuto;
-	private String photo ;
 	private String moteur;
 	private String marque;
 	private String model;
@@ -19,6 +18,8 @@ public class Automobile {
 	private double prix;
 	private int nbrPlace;
 	private String description;
+	private String type;
+	private String photo ;
 	
 	
 	//Constructeurs
@@ -27,10 +28,10 @@ public class Automobile {
 		super();
 	}
 	
-	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
-			int nbrPlace, String description, String photo) {
+	public Automobile(  String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description,String type, String photo ) {
+
 		super();
-		this.idAuto = idAuto;
 		this.moteur = moteur;
 		this.marque = marque;
 		this.model = model;
@@ -39,6 +40,7 @@ public class Automobile {
 		this.nbrPlace = nbrPlace;
 		this.description = description;
 		this.photo = photo;
+		this.type = type;
 	}
 
 	
@@ -54,6 +56,23 @@ public class Automobile {
 		this.prix = prix;
 		this.nbrPlace = nbrPlace;
 		this.description = description;
+
+	}
+	
+	
+
+	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description, String type, String photo) {
+		super();
+		this.idAuto = idAuto;
+		this.moteur = moteur;
+		this.marque = marque;
+		this.model = model;
+		this.couleur = couleur;
+		this.prix = prix;
+		this.nbrPlace = nbrPlace;
+		this.description = description;
+		this.type = type;
 		this.photo = photo;
 	}
 
@@ -131,6 +150,14 @@ public class Automobile {
 
 	public void setPhoto(String photo) {
 		this.photo = photo;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 	
 	
