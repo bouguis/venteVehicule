@@ -4,6 +4,8 @@ import java.sql.Connection;
 import sn.objis.venteVehicule.dao.IDaoAutomobileImpl;
 import sn.objis.venteVehicule.domaine.Automobile;
 
+
+
 public class CreationAutoEssence implements CreationAuto{
 	
 	private IDaoAutomobileImpl dao;
@@ -19,6 +21,7 @@ public class CreationAutoEssence implements CreationAuto{
 	@Override
 	public void creerAutomobile(Automobile auto) {
 		dao.ajouter(auto);
+
 	}
 	}
 	
