@@ -4,4 +4,42 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+  	<servlet-name>FormulaireServlet</servlet-name>
+  	<display-name>FormulaireServlet</display-name>
+  	<description></description>
+  	<servlet-class>sn.objis.venteVehicule.presentation.FormulaireServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AcceuilServlet</servlet-name>
+  	<display-name>AcceuilServlet</display-name>
+  	<description></description>
+  	<servlet-class>sn.objis.venteVehicule.presentation.AcceuilServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AjoutServlet</servlet-name>
+  	<display-name>AjoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>sn.objis.venteVehicule.presentation.AjoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FormulaireServlet</servlet-name>
+  	<url-pattern>/formulaire</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AcceuilServlet</servlet-name>
+  	<url-pattern>/acceuil</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AjoutServlet</servlet-name>
+  	<url-pattern>/ajout</url-pattern>
+  </servlet-mapping>
+ 
+
+   <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    
+  </welcome-file-list>
+
 </web-app>
