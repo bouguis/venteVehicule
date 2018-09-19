@@ -16,6 +16,8 @@ public class Client {
 	private String adresse;
 	private String email;
 	private String tel;
+	private Commande commande;
+	private String codeClient;
 	
 	//Constructeurs
 	/**
@@ -25,15 +27,7 @@ public class Client {
 		super();
 	}
 
-	/**
-	 * @param nom
-	 * @param prenom
-	 * @param sexe
-	 * @param adresse
-	 * @param email
-	 * @param tel
-	 */
-	public Client(String nom, String prenom, String sexe, String adresse, String email, String tel) {
+	public Client(String nom, String prenom, String sexe, String adresse, String email, String tel, Commande commande, String codeClient) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
@@ -41,6 +35,8 @@ public class Client {
 		this.adresse = adresse;
 		this.email = email;
 		this.tel = tel;
+		this.commande = commande;
+		this.codeClient = codeClient;
 	}
 	
 	//Getters et Setters
@@ -99,6 +95,22 @@ public class Client {
 
 	public void setTel(String tel) {
 		this.tel = tel;
+	}
+
+	public Commande getCommande() {
+		return commande;
+	}
+
+	public void setCommande(Commande commande) {
+		this.commande = commande;
+	}
+
+	public String getCodeClient() {
+		return codeClient;
+	}
+
+	public void setCodeClient(String codeClient) {
+		this.codeClient = codeClient;
 	}
 	
 	
