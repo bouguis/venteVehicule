@@ -1,6 +1,7 @@
 package sn.objis.venteVehicule.service;
 
 import java.sql.Connection;
+import java.util.List;
 
 import sn.objis.venteVehicule.dao.IDaoAutomobileImpl;
 import sn.objis.venteVehicule.domaine.Automobile;
@@ -20,6 +21,18 @@ public class CreationAutoElectrique implements CreationAuto{
 	public void creerAutomobile(Automobile auto) {
 		
 		dao.ajouter(auto);
+	}
+
+	@Override
+	public List<Automobile> findAll() {
+		// TODO Auto-generated method stub
+		return dao.getAll();
+	}
+
+	@Override
+	public Automobile rechercheId(long id) {
+		// TODO Auto-generated method stub
+		return dao.findbyId(id);
 	}
 
 }

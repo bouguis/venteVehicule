@@ -28,7 +28,7 @@ public class IServiceAutomobileImpl implements IServiceAutomobile {
 	@Override
 	public List<Automobile> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getAll();
 	}
 
 	/* (non-Javadoc)

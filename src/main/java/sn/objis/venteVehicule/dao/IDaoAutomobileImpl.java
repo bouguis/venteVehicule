@@ -1,8 +1,13 @@
 package sn.objis.venteVehicule.dao;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,6 +16,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.imageio.ImageIO;
+
 import sn.objis.venteVehicule.domaine.Automobile;
 
 public class IDaoAutomobileImpl implements IDaoAutomobile{
@@ -18,6 +25,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	private Connection con;
 	File f;
 	FileInputStream istreamImage = null;
+	BufferedImage bufImag = null;
 	
 	
 
@@ -79,11 +87,13 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	@Override
 	public List<Automobile> getAll() {
 		List<Automobile> listeAuto = new ArrayList<>();
+		Automobile auto = null;
 
 		try {
 
 			// Etape 1 : Preparation de la requête
-			String sql = "SELECT * From automobile";
+			String sql = "SELECT * FROM automobile";
+			
 
 			Statement st = con.createStatement();
 
@@ -93,7 +103,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 			// Etape 3 : Traitement des données du resultat de la requête
 	 		while (rs.next()) {
-	 			String photoRecuperer = rs.getString("photo");
+	 			long idRecupere = rs.getLong("id_automobile");
 				String moteurRecuperer = rs.getString("moteur");
 				String marqueRecuperer = rs.getString("marque");
 				String modelRecuperer = rs.getString("model");
@@ -101,8 +111,32 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				Double prixRecuperer = rs.getDouble("prix");
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
+				String type = rs.getString("type");
+				Blob img = rs.getBlob("photo");
+				byte  tof[] = new byte [(int) img.length()];
+				tof = img.getBytes(1, (int) img.length());
+				FileOutputStream fout = null;
+				try {
+					
+					
+						fout = new FileOutputStream("/home/diawara/Bureau/" + ".jpg");
+						 fout.write(tof);
+					
+					
+	                    
+				     fout.close();
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		       
 				
-				Automobile auto = new Automobile(moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, photoRecuperer);
+				
+				
+				 auto = new Automobile(idRecupere, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, type, fout);
 				listeAuto.add(auto);
 			}
 

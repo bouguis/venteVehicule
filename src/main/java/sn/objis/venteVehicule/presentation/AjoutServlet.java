@@ -43,8 +43,22 @@ public class AjoutServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+
+		//Etablissement de la connexion
+		con = (Connection) getServletContext().getAttribute("connexion");
+		
+		CreationAutoElectrique electrique = new CreationAutoElectrique(con);
+		CreationAutoEssence essence = new CreationAutoEssence(con);
+		
+		// Utilisation d'un scope pour afficher
+		request.setAttribute("catalogue", essence.findAll() );
+		
+		
+		// Redirection
+		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		rd.forward(request, response);
+				
+		
 	}
 
 	/**
@@ -82,6 +96,8 @@ public class AjoutServlet extends HttpServlet {
 			auto.setPhoto(file);
 			auto.setType(type);
 			essence.creerAutomobile(auto);
+			// Utilisation d'un scope pour afficher
+			request.setAttribute("catalogue", essence.findAll() );
 			
 		}else if (type.equalsIgnoreCase("electrique")) {
 			auto.setMoteur(moteur);
@@ -95,18 +111,23 @@ public class AjoutServlet extends HttpServlet {
 			auto.setType(type);
 			electrique.creerAutomobile(auto);
 			
+			// Utilisation d'un scope pour afficher
+			request.setAttribute("catalogue", electrique.findAll() );
+			
 			
 		}else {
 			System.out.println("Veuillez choisir Essence ou Electrique");
 		}
+		
+		
 
 		
 
 
-		// Utilisation d'un scope pour afficher
+		
 		
 		// Redirection
-		RequestDispatcher rd = request.getRequestDispatcher("client/formulaire.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		rd.forward(request, response);
 		
 		

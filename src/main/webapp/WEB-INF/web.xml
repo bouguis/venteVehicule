@@ -23,6 +23,24 @@
   	<description></description>
   	<servlet-class>sn.objis.venteVehicule.presentation.AjoutServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ListeServlet</servlet-name>
+  	<display-name>ListeServlet</display-name>
+  	<description></description>
+  	<servlet-class>sn.objis.venteVehicule.presentation.ListeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditerServlet</servlet-name>
+  	<display-name>EditerServlet</display-name>
+  	<description></description>
+  	<servlet-class>sn.objis.venteVehicule.presentation.EditerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AjoutClient</servlet-name>
+  	<display-name>AjoutClient</display-name>
+  	<description></description>
+  	<servlet-class>sn.objis.venteVehicule.presentation.AjoutClient</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>FormulaireServlet</servlet-name>
   	<url-pattern>/formulaire</url-pattern>
@@ -34,6 +52,18 @@
   <servlet-mapping>
   	<servlet-name>AjoutServlet</servlet-name>
   	<url-pattern>/ajout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListeServlet</servlet-name>
+  	<url-pattern>/lister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditerServlet</servlet-name>
+  	<url-pattern>/editer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AjoutClient</servlet-name>
+  	<url-pattern>/ajoutClient</url-pattern>
   </servlet-mapping>
  
 

@@ -1,3 +1,8 @@
+<%@page import="sn.objis.venteVehicule.domaine.Automobile"%>
+<%@page import="sn.objis.venteVehicule.presentation.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8" isELIgnored="false"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +40,20 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/img.css">
 <!--===============================================================================================-->
+    
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+     
+      <link rel="apple-touch-icon" sizes="76x76" href="resources/assets/img/apple-icon.png">
+   <link rel="icon" type="image/png" href="resources/assets/img/favicon.png">
+   <!--     Fonts and icons     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS Files -->
+    <link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="resources/assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="resources/assets/css/demo.css" rel="stylesheet" />
 </head>
 <body class="animsition">
 	
@@ -85,8 +103,8 @@
 								<a href="acceuil">Acceuil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html">Homepage 1</a></li>
-									<li><a href="home-02.html">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
+									<li><a href="home-02.html"></a></li>
+									<li><a href="home-03.html"></a></li>
 								</ul>
 							</li>
 
@@ -196,8 +214,8 @@
 					<a href="acceuil">Acceuil</a>
 					<ul class="sub-menu-m">
 						<li><a href="index.html">Homepage 1</a></li>
-						<li><a href="home-02.html">Homepage 2</a></li>
-						<li><a href="home-03.html">Homepage 3</a></li>
+						<li><a href="home-02.html"></a></li>
+						<li><a href="home-03.html"></a></li>
 					</ul>
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -493,6 +511,50 @@
 	</div>
 
 
+	<div class="card-body">
+		<div class="table-responsive">
+			<form action="ajout" method="post">
+				<table class="table table-hover" id="tableau_client">
+					<thead class="">
+						<th>Id</th>
+						<th>Photo</th>
+						<th>Moteur</th>
+						<th>Marque</th>
+						<th>Model</th>
+						<th>Couleur</th>
+
+						<th>Action</th>
+					</thead>
+					<tbody>
+						<c:forEach items="${catalogue}"  var="rep">
+							<tr>
+								<td>${rep.idAuto}</td>
+								<td>${rep.fout}</td>
+								<td>${rep.moteur}</td>
+								<td>${rep.marque}</td>
+								<td>${rep.model}</td>
+								<td>${rep.couleur}</td>
+								<td><a href="editer?idEdit=${rep.idAuto}"><button
+											type="button" rel="tooltip" title="Modifier"
+											class="btn btn-primary btn-link btn-sm">
+											<i class="material-icons">edit</i>
+										</button></a>
+										 <a href="supprimer?idSup=${rep.idAuto}"><button
+											type="button" rel="tooltip" title="Supprimer"
+											class="btn btn-danger btn-link btn-sm">
+											<i class="material-icons">close</i>
+										</button> </a>
+								</td>
+							</tr>
+						</c:forEach>
+
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+
+
 	<!-- Product -->
 	<section class="bg0 p-t-23 p-b-140">
 		<div class="container">
@@ -744,14 +806,17 @@
 				</div>
 			</div>
             
-          
+           
 			<div class="row isotope-grid">
-				
+			
+				<c:forEach var="rep" items="${catalogue}">
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
 					<!-- Block2 -->
+					
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="resources/images/bmw-serie-2.jpg" alt="IMG-PRODUCT">
+							<img src="${rep.img}"   alt="IMG-PRODUCT">
+							     
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
@@ -760,8 +825,10 @@
 
 						<div class="block2-txt flex-w flex-t p-t-14">
 							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Bmw SERIE 2 2018
+								<a href="editer?idEdit=${rep.idAuto}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+									
+									Details			
+					    
 								</a>
 
 								<span class="stext-105 cl3">
@@ -777,7 +844,10 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
+				</c:forEach>
+				
 
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
 					<!-- Block2 -->
@@ -794,6 +864,9 @@
 							<div class="block2-txt-child1 flex-col-l ">
 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 									 Bmw X6 2018
+									 <% 
+									
+									 %>
 								</a>
 
 								<span class="stext-105 cl3">
@@ -812,13 +885,14 @@
 				</div>
 				
 				              
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">		 
+                <c:forEach var="rep" items="${auto}">	
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">	
+				 
 					<!-- Block2 -->
 					<div class="block2">
 						<div class="block2-pic hov-img0">
 								<img src="resources/images/mercedes1.jpeg" alt="IMG-PRODUCT">				
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+							<a href="editer?idEdit=${rep.idAuto}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 								Quick View
 							</a>
 						</div>
@@ -842,7 +916,9 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
+				</c:forEach>
 
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
 					<!-- Block2 -->
@@ -1261,6 +1337,7 @@
 				</div>
 					
 			</div>
+			
 		
 
 			<!-- Load more -->
@@ -1494,20 +1571,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							
 							<!--  -->
 							<div class="p-t-33">
+							
 								<div class="flex-w flex-r-m p-b-10">
 									<div class="size-203 flex-c-m respon6">
-										Size
+										Description
 									</div>
 
 									<div class="size-204 respon6-next">
-										<div class="rs1-select2 bor8 bg0">
-											<select class="js-select2" name="time">
-												<option>Choose an option</option>
-												<option>Size S</option>
-												<option>Size M</option>
-												<option>Size L</option>
-												<option>Size XL</option>
-											</select>
+										<div class="rs1-select2 bor8 bg0" >
+											
+											<input name="description" type="text" class="form-control" value="${auto.description}">
+											
 											<div class="dropDownSelect2"></div>
 										</div>
 									</div>
@@ -1520,16 +1594,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 									<div class="size-204 respon6-next">
 										<div class="rs1-select2 bor8 bg0">
-											<select class="js-select2" name="time">
-												<option>Choose an option</option>
-												<option>Red</option>
-												<option>Blue</option>
-												<option>White</option>
-												<option>Grey</option>
-											</select>
+											
+											
+											
 											<div class="dropDownSelect2"></div>
 										</div>
 									</div>
+									
 								</div>
 
 								<div class="flex-w flex-r-m p-b-10">
@@ -1688,5 +1759,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--     formulaire -->
+    <!--   Core JS Files   -->
+	<script src="resources/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="resources/assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="resources/assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="resources/assets/js/gsdk-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="resources/assets/js/jquery.validate.min.js"></script>
 </body>
 </html>

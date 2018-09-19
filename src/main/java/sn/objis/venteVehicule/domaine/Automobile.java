@@ -4,6 +4,10 @@
 package sn.objis.venteVehicule.domaine;
 
 
+
+import java.io.FileOutputStream;
+import java.sql.Blob;
+
 /**
  * @author HP
  *
@@ -20,6 +24,9 @@ public class Automobile {
 	private String description;
 	private String type;
 	private String photo ;
+	private Blob img;
+	private FileOutputStream fout;
+	
 	
 	
 	//Constructeurs
@@ -74,6 +81,40 @@ public class Automobile {
 		this.description = description;
 		this.type = type;
 		this.photo = photo;
+	}
+	
+
+	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description, String type, Blob img) {
+		super();
+		this.idAuto = idAuto;
+		this.moteur = moteur;
+		this.marque = marque;
+		this.model = model;
+		this.couleur = couleur;
+		this.prix = prix;
+		this.nbrPlace = nbrPlace;
+		this.description = description;
+		this.type = type;
+		this.img = img;
+	}
+	
+	
+	
+
+	public Automobile(long idAuto, String moteur, String marque, String model, String couleur, double prix,
+			int nbrPlace, String description, String type, FileOutputStream fout) {
+		super();
+		this.idAuto = idAuto;
+		this.moteur = moteur;
+		this.marque = marque;
+		this.model = model;
+		this.couleur = couleur;
+		this.prix = prix;
+		this.nbrPlace = nbrPlace;
+		this.description = description;
+		this.type = type;
+		this.fout = fout;
 	}
 
 	//Getters et Setters
@@ -159,6 +200,31 @@ public class Automobile {
 	public void setType(String type) {
 		this.type = type;
 	}
+
+	public Blob getImg() {
+		return img;
+	}
+
+	public void setImg(Blob img) {
+		this.img = img;
+	}
+
+	public FileOutputStream getFout() {
+		return fout;
+	}
+
+	public void setFout(FileOutputStream fout) {
+		this.fout = fout;
+	}
+
+	@Override
+	public String toString() {
+		return "Automobile [description=" + description + "]";
+	}
+	
+
+	
+	
 	
 	
 	
