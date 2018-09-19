@@ -1,6 +1,3 @@
-/**
- * 
- */
 package sn.objis.venteVehicule.domaine;
 
 import java.util.Date;
@@ -14,8 +11,9 @@ public class Commande {
 	//Proprietes
 	private long idCommande;
 	private Date dateCommande;
-	private long idClient;
+	private Client client;
 	private List<Automobile> listeAutos;
+	
 	
 	
 	//Constructeur
@@ -28,11 +26,11 @@ public class Commande {
 
 	
 	
-	public Commande(long idCommande, Date dateCommande, long idClient, List<Automobile> listeAutos) {
+	public Commande(long idCommande, Date dateCommande, Client client, List<Automobile> listeAutos) {
 		super();
 		this.idCommande = idCommande;
 		this.dateCommande = dateCommande;
-		this.idClient = idClient;
+		this.client = client;
 		this.listeAutos = listeAutos;
 	}
 
@@ -69,12 +67,12 @@ public class Commande {
 		this.dateCommande = dateCommande;
 	}
 
-	public long getIdClient() {
-		return idClient;
+	public Client getClient() {
+		return client;
 	}
 
-	public void setIdClient(long idClient) {
-		this.idClient = idClient;
+	public void setClient(Client client) {
+		this.client = client;
 	}
 
 	

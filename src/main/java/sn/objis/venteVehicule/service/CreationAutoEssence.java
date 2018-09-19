@@ -1,7 +1,9 @@
 package sn.objis.venteVehicule.service;
 
 import java.sql.Connection;
+
 import java.util.List;
+
 
 import sn.objis.venteVehicule.dao.IDaoAutomobileImpl;
 import sn.objis.venteVehicule.domaine.Automobile;
@@ -12,7 +14,6 @@ public class CreationAutoEssence implements CreationAuto{
 	
 	private IDaoAutomobileImpl dao;
 	Connection con;
-	
 
 	public CreationAutoEssence(Connection con) {
 		super();
@@ -24,8 +25,8 @@ public class CreationAutoEssence implements CreationAuto{
 	@Override
 	public void creerAutomobile(Automobile auto) {
 		dao.ajouter(auto);
-		
 	}
+
 
 
 	@Override
@@ -41,4 +42,9 @@ public class CreationAutoEssence implements CreationAuto{
 		return dao.findbyId(id);
 	}
 
-}
+
+
+	}
+	
+	
+

@@ -23,6 +23,7 @@ public class CreationAutoElectrique implements CreationAuto{
 		dao.ajouter(auto);
 	}
 
+
 	@Override
 	public List<Automobile> findAll() {
 		// TODO Auto-generated method stub
