@@ -23,7 +23,7 @@ public class Automobile {
 	private int nbrPlace;
 	private String description;
 	private String type;
-	private String photo ;
+	private String photo  ;
 	private Blob img;
 	private FileOutputStream fout;
 	

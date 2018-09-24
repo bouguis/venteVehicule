@@ -3,12 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shoping Cart</title>
+	<title>Contact</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="resources/images/icons/favicon.png"/>
 <!--===============================================================================================-->
@@ -33,17 +30,6 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/util.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 <!--===============================================================================================-->
-   <link rel="apple-touch-icon" sizes="76x76" href="resources/assets/img/apple-icon.png">
-   <link rel="icon" type="image/png" href="resources/assets/img/favicon.png">
-   <!--     Fonts and icons     -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-
-	<!-- CSS Files -->
-    <link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="resources/assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
-
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="resources/assets/css/demo.css" rel="stylesheet" />
 </head>
 <body class="animsition">
 	
@@ -63,8 +49,8 @@
 							Help & FAQs
 						</a>
 
-						<a href="login" class="flex-c-m trans-04 p-lr-25">
-							Se Connecter
+						<a href="#" class="flex-c-m trans-04 p-lr-25">
+							Se Deconnecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -102,9 +88,9 @@
 								<a href="acceuil">Catalogue</a>
 							</li>
 
-<!-- 							<li class="label1" data-label1="hot"> -->
-<!-- 								<a href="formulaire">Gestion Catalogue</a> -->
-<!-- 							</li> -->
+							<li class="label1" data-label1="hot">
+								<a href="formulaire">Gestion Catalogue</a>
+							</li>
 
 							<li>
 								<a href="#">Solde</a>
@@ -114,8 +100,8 @@
 								<a href="#">A Propos</a>
 							</li>
 
-							<li>
-								<a href="#">Nous Contactez</a>
+							<li class="active-menu">
+								<a href="ajoutClient">Nous Contactez</a>
 							</li>
 						</ul>
 					</div>	
@@ -201,7 +187,7 @@
 
 			<ul class="main-menu-m">
 				<li>
-					<a href="acceuil">Acceuil</a>
+					<a href="index.html">Acceuil</a>
 					<ul class="sub-menu-m">
 						<li><a href="index.html"></a></li>
 						<li><a href="home-02.html"></a></li>
@@ -213,23 +199,23 @@
 				</li>
 
 				<li>
-					<a href="product.html">Catalogue</a>
+					<a href="product.html">Shop</a>
 				</li>
 
 				<li>
-					<a href="formulaire" class="label1 rs1" data-label1="hot">Gestion Catalogue</a>
+					<a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
 				</li>
 
 				<li>
-					<a href="blog.html">Solde</a>
+					<a href="blog.html">Blog</a>
 				</li>
 
 				<li>
-					<a href="about.html">A Propos</a>
+					<a href="about.html">About</a>
 				</li>
 
 				<li>
-					<a href="contact.html">Nous Contactez</a>
+					<a href="contact.html">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -337,192 +323,99 @@
 	</div>
 
 
-	<!-- breadcrumb -->
-	<div class="container">
-		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
-			<a href="index.html" class="stext-109 cl8 hov-cl1 trans-04">
-				Home
-				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-			</a>
+	<!-- Title page -->
+	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('resources/images/mercedes1.jpeg');">
+		<h2 class="ltext-105 cl0 txt-center">
+			Contact
+		</h2>
+	</section>	
 
-			<span class="stext-109 cl4">
-				Shoping Cart
-			</span>
-		</div>
-	</div>
-		
 
-	<!-- Shoping Cart -->
-	 <div class="container">
-        <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+	<!-- Content page -->
+	<section class="bg0 p-t-104 p-b-116">
+		<div class="container">
+			<div class="flex-w flex-tr">
+				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
+					<form>
+						<h4 class="mtext-105 cl2 txt-center p-b-30">
+							Send Us A Message
+						</h4>
 
-            <!--      Wizard container        -->
-            <div class="wizard-container">
-
-                <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                    <form action="ajout" method="post">
-                <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
-
-                    	<div class="wizard-header">
-                        	<h3>
-                        	   <b>AJOUT</b> Voiture <br>
-                        	   <small></small>
-                        	</h3>
-                    	</div>
-
-						<div class="wizard-navigation">
-							<ul>
-	                            <li><a href="#about" data-toggle="tab">Autres Caracteristiques</a></li>
-	                            <li><a href="#account" data-toggle="tab">Couleur</a></li>
-	                             <li><a href="#description" data-toggle="tab">Description</a></li>
-	                        </ul>
-
+						<div class="bor8 m-b-20 how-pos4-parent">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
+							<img class="how-pos4 pointer-none" src="resources/images/icons/icon-email.png" alt="ICON">
 						</div>
 
-                        <div class="tab-content">
-                            <div class="tab-pane" id="about">
-                              <div class="row">
-                                  <h4 class="info-text"> </h4>
-                                  <div class="col-sm-4 col-sm-offset-1">
-                                     <div class="picture-container">
-                                     <!--  -->
-                                          <div class="picture">
-                                              <img src="resources/assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                              <input type="file" id="wizard-picture" name="photo">
-                                          </div>
-                                          <h6>Voiture</h6>
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                      <div class="form-group">
-                                        <label>Moteur <small>(required)</small></label>
-                                        <input name="moteur" type="text" class="form-control" placeholder="Expl:">
-                                      </div>
-                                      <div class="form-group">
-                                        <label>Marque <small>(required)</small></label>
-                                        <input name="marque" type="text" class="form-control" placeholder="Expl:">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-10 col-sm-offset-1">
-                                      <div class="form-group">
-                                          <label>Model <small>(required)</small></label>
-                                          <input name="model" type="text" class="form-control" placeholder="Expl:">
-                                      </div>
-                                      
-                                  </div>
-                                  <div class="col-sm-10 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Prix</label>
-                                            <input type="text" name="prix" class="form-control" placeholder="1200000f">
-                                          </div>
-                                    </div>
-                                     <div class="col-sm-10 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Nombres de Places</label>
-                                            <input type="text" name="nombre" class="form-control" placeholder="5">
-                                          </div>
-                                    </div>
-                                     <div class="col-sm-10 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Type de vehicule</label><br>
-                                             <select name="auto" class="form-control">
-                                                <option value="electrique">Electrique</option>
-                                                <option value="essence">Essence</option>
-                                            </select>
-                                          </div>
-                                    </div>
-                              </div>
-                            </div>
-                            <div class="tab-pane" id="account">
-                                <h4 class="info-text"> Choisissez votre couleur</h4>
-                                <div class="row">
+						<div class="bor8 m-b-30">
+							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
+						</div>
 
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-3">
-                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #A9A9A9" >
-                                                <input type="checkbox" name="couleur" value="gris">
-                                                <div class="icon"  style="color: #A9A9A9" >
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Gris</h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3" >
-                                            <div class="choice" data-toggle="wizard-checkbox"  style="color: red">
-                                                <input type="checkbox" name="couleur" value="rouge">
-                                                <div class="icon"  style="color: red">
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Rouge</h6>
-                                            </div>
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+							Submit
+						</button>
+					</form>
+				</div>
 
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #000000">
-                                                <input type="checkbox" name="couleur" value="blanc">
-                                                <div class="icon">
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Blanc</h6>
-                                            </div>
+				<div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
+					<div class="flex-w w-full p-b-42">
+						<span class="fs-18 cl5 txt-center size-211">
+							<span class="lnr lnr-map-marker"></span>
+						</span>
 
-                                        </div>
-                                         <div class="col-sm-3">
-                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #191970">
-                                                <input type="checkbox" name="couleur" value="bleu">
-                                                <div class="icon" style="color: #191970">
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Bleu</h6>
-                                            </div>
+						<div class="size-212 p-t-2">
+							<span class="mtext-110 cl2">
+								Address
+							</span>
 
-                                        </div>
-                                    </div>
+							<p class="stext-115 cl6 size-213 p-t-18">
+								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+							</p>
+						</div>
+					</div>
 
-                                </div>
-                            </div>
-                           
-                              <div class="tab-pane" id="description">
-                                <div class="row">
-                                    <h4 class="info-text">  </h4>
-                                    <div class="col-sm-6 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label> Description</label>
-                                            <textarea class="form-control" name="description" placeholder="" rows="9">
-                                            </textarea>
-                                          </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                         <div class="form-group">
-                                            <label></label>
-                                            
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wizard-footer height-wizard">
-                            <div class="pull-right">
-                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type="submit"  class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name="action" value='Finish' />
+					<div class="flex-w w-full p-b-42">
+						<span class="fs-18 cl5 txt-center size-211">
+							<span class="lnr lnr-phone-handset"></span>
+						</span>
 
-                            </div>
+						<div class="size-212 p-t-2">
+							<span class="mtext-110 cl2">
+								Lets Talk
+							</span>
 
-                            <div class="pull-left">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+							<p class="stext-115 cl1 size-213 p-t-18">
+								+1 800 1236879
+							</p>
+						</div>
+					</div>
 
-                    </form>
-                </div>
-            </div> <!-- wizard container -->
-        </div>
-        </div><!-- end row -->
-    </div> <!--  big container -->
+					<div class="flex-w w-full">
+						<span class="fs-18 cl5 txt-center size-211">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+
+						<div class="size-212 p-t-2">
+							<span class="mtext-110 cl2">
+								Sale Support
+							</span>
+
+							<p class="stext-115 cl1 size-213 p-t-18">
+								contact@example.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
 	
-		
+	
+	<!-- Map -->
+	<div class="map">
+		<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
+	</div>
+
+
 
 	<!-- Footer -->
 	<footer class="bg3 p-t-75 p-b-32">
@@ -714,17 +607,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		});
 	</script>
 <!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="resources/js/map-custom.js"></script>
+<!--===============================================================================================-->
 	<script src="resources/js/main.js"></script>
-	<!--   Core JS Files   -->
-	<script src="resources/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-	<script src="resources/assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="resources/assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-
-	<!--  Plugin for the Wizard -->
-	<script src="resources/assets/js/gsdk-bootstrap-wizard.js"></script>
-
-	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-	<script src="resources/assets/js/jquery.validate.min.js"></script>
 
 </body>
 </html>

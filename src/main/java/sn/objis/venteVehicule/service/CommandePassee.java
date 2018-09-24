@@ -1,45 +1,25 @@
 package sn.objis.venteVehicule.service;
 
-import java.util.List;
+import java.sql.Connection;
 
-import sn.objis.venteVehicule.domaine.Automobile;
-import sn.objis.venteVehicule.domaine.Commande;
+import sn.objis.venteVehicule.dao.IDaoClientImpl;
+import sn.objis.venteVehicule.domaine.Client;
 
 public class CommandePassee {
-	Commande commande;
-	protected List<Automobile> vehicules = commande.getListeAutos();
-	protected EtatCommande etatCommande;
 	
-	public CommandePassee() {
-		
-		etatCommande = new CommandeEnCours(commande);
-		
+	Connection con;
+	private IDaoClientImpl daoclient;
+
+	public CommandePassee(Connection con) {
+		super();
+		this.con = con;
+		daoclient = new IDaoClientImpl(con);
 	}
 	
-	public void ajouterAutomobile(Automobile automobile) {
+	public void ajoutClient(Client t) {
 		
-		etatCommande.ajouterVehicule(automobile);
-		
+		daoclient.ajouter(t);
 	}
 	
-	public void retireAutomobile(Automobile automobile) {
-	
-		etatCommande.retirerVehicule(automobile);
-	}
-	
-	public void efface(){
-		
-		etatCommande.efface();
-	}
-	
-	public void etatSuivant(){
-		
-		etatCommande = etatCommande.etatSuivant();
-	}
-	
-	public List<Automobile> getAuto(){
-		
-		return vehicules;
-	}
 	
 }

@@ -22,7 +22,7 @@ public class IDaoClientImpl implements IDaoClient{
 		
 			// Etape 1 : Preparation de la requête
 
-			String sql = " INSERT INTO client( nom, prenom, sexe, adresse, email, tel, codeClient, commande)  VALUES(?,?,?,?,?,?,?,?)";
+			String sql = " INSERT INTO client( nom, prenom, sexe, adresse, email, tel, codeClient)  VALUES(?,?,?,?,?,?,?)";
 
 			//Récupération d'une Zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
@@ -43,7 +43,7 @@ public class IDaoClientImpl implements IDaoClient{
 			
 			pst.setString(7, t.getCodeClient());
 			
-			pst.setLong(8, t.getCommande().getIdCommande());
+			
 
 			// Etape 3 : Execution e la requête
 			pst.executeUpdate();

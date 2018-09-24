@@ -49,8 +49,8 @@
 							Help & FAQs
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							My Account
+						<a href="login" class="flex-c-m trans-04 p-lr-25">
+							Se Connecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -78,19 +78,19 @@
 							<li>
 								<a href="acceuil">Acceuil</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
-									<li><a href="home-02.html">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
+									<li><a href="index.html"></a></li>
+									<li><a href="home-02.html"></a></li>
+									<li><a href="home-03.html"></a></li>
 								</ul>
 							</li>
 
 							<li>
-								<a href="product.html">Catalogue</a>
+								<a href="acceuil">Catalogue</a>
 							</li>
 
-							<li class="label1" data-label1="hot">
-								<a href="formulaire">Gestion Catalogue</a>
-							</li>
+<!-- 							<li class="label1" data-label1="hot"> -->
+<!-- 								<a href="formulaire">Gestion Catalogue</a> -->
+<!-- 							</li> -->
 
 							<li>
 								<a href="blog.html">Solde</a>

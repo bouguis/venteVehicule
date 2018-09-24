@@ -3,73 +3,99 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<display-name>Archetype Created Web Application</display-name>
 
-  <servlet>
-  	<servlet-name>FormulaireServlet</servlet-name>
-  	<display-name>FormulaireServlet</display-name>
-  	<description></description>
-  	<servlet-class>sn.objis.venteVehicule.presentation.FormulaireServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>AcceuilServlet</servlet-name>
-  	<display-name>AcceuilServlet</display-name>
-  	<description></description>
-  	<servlet-class>sn.objis.venteVehicule.presentation.AcceuilServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>AjoutServlet</servlet-name>
-  	<display-name>AjoutServlet</display-name>
-  	<description></description>
-  	<servlet-class>sn.objis.venteVehicule.presentation.AjoutServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>ListeServlet</servlet-name>
-  	<display-name>ListeServlet</display-name>
-  	<description></description>
-  	<servlet-class>sn.objis.venteVehicule.presentation.ListeServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>EditerServlet</servlet-name>
-  	<display-name>EditerServlet</display-name>
-  	<description></description>
-  	<servlet-class>sn.objis.venteVehicule.presentation.EditerServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>AjoutClient</servlet-name>
-  	<display-name>AjoutClient</display-name>
-  	<description></description>
-  	<servlet-class>sn.objis.venteVehicule.presentation.AjoutClient</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>FormulaireServlet</servlet-name>
-  	<url-pattern>/formulaire</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AcceuilServlet</servlet-name>
-  	<url-pattern>/acceuil</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AjoutServlet</servlet-name>
-  	<url-pattern>/ajout</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>ListeServlet</servlet-name>
-  	<url-pattern>/lister</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>EditerServlet</servlet-name>
-  	<url-pattern>/editer</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AjoutClient</servlet-name>
-  	<url-pattern>/ajoutClient</url-pattern>
-  </servlet-mapping>
- 
+	
+	<servlet>
+		<servlet-name>AcceuilServlet</servlet-name>
+		<display-name>AcceuilServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.AcceuilServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AjoutServlet</servlet-name>
+		<display-name>AjoutServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.AjoutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ListeServlet</servlet-name>
+		<display-name>ListeServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.ListeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EditerServlet</servlet-name>
+		<display-name>EditerServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.EditerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AjoutClient</servlet-name>
+		<display-name>AjoutClient</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.AjoutClient</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<display-name>LoginServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AcceuilServlet</servlet-name>
+		<url-pattern>/acceuil</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AjoutServlet</servlet-name>
+		<url-pattern>/ajout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListeServlet</servlet-name>
+		<url-pattern>/lister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditerServlet</servlet-name>
+		<url-pattern>/editer</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AjoutClient</servlet-name>
+		<url-pattern>/ajoutClient</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
 
-   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-    
-  </welcome-file-list>
+
+	<welcome-file-list>
+		<welcome-file>client/acceuil.jsp</welcome-file>
+
+	</welcome-file-list>
+	<security-constraint>
+		<display-name>Ressources accessibles à l'administrateur</display-name>
+		<web-resource-collection>
+			<web-resource-name>Administrateur</web-resource-name>
+			<url-pattern>/admin/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>realm</realm-name>
+		<form-login-config>
+			<form-login-page>client/login.jsp</form-login-page>
+			<form-error-page>/error.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	<security-role>
+		<description>Administrateur</description>
+		<role-name>admin</role-name>
+	</security-role>
+
+
 
 </web-app>

@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import sn.objis.venteVehicule.domaine.Automobile;
 import sn.objis.venteVehicule.service.CreationAutoElectrique;
@@ -33,21 +34,26 @@ public class AcceuilServlet extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		// Etablissement de la connexion
-				con = (Connection) getServletContext().getAttribute("connexion");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
-				CreationAutoElectrique electrique = new CreationAutoElectrique(con);
-				CreationAutoEssence essence = new CreationAutoEssence(con);
-				
-				// Utilisation d'un scope pour afficher
-				request.setAttribute("catalogue", essence.findAll());
-				request.setAttribute("catalogue", electrique.findAll());
-				
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+		// Etablissement de la connexion
+		con = (Connection) getServletContext().getAttribute("connexion");
+
+		CreationAutoElectrique electrique = new CreationAutoElectrique(con);
+		CreationAutoEssence essence = new CreationAutoEssence(con);
+
+		// Utilisation d'un scope pour afficher
+		request.setAttribute("catalogue", essence.findAll());
+		request.setAttribute("catalogue", electrique.findAll());
+
+		
+			request.getRequestDispatcher("client/acceuil.jsp").forward(request, response);
+		
+
 	}
 
 	/**

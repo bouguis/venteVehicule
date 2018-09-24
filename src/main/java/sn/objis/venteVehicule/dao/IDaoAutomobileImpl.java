@@ -28,6 +28,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	BufferedImage bufImag = null;
 	
 	
+	
 
 	public IDaoAutomobileImpl(Connection con) {
 		super();
@@ -41,11 +42,11 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 		
 		
 		try {
-			f = new File("/home/diawara/Bureau/voitures"+ "/" + t.getPhoto());
-			 istreamImage = new FileInputStream(f);
+			
+			 String img = "resources/images"+ "/" + t.getPhoto();
 
 			// Etape 1 : Preparation de la requête
-
+;
 			String sql = " INSERT INTO automobile( moteur, marque, model, couleur, prix, nbrPlace, description,type, photo )  VALUES(?,?,?,?,?,?,?,?,?)";
 
 			//Récupération d'une Zone de requete
@@ -67,8 +68,9 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			
 			pst.setString(7, t.getDescription());
 			pst.setString(8, t.getType());
+			pst.setString(9, img);
 			
-			pst.setBinaryStream(9, istreamImage, (int)f.length());
+			//pst.setBinaryStream(9, istreamImage, (int)f.length());
 
 			// Etape 3 : Execution e la requête
 			pst.executeUpdate();
@@ -76,7 +78,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			System.out.println("Ajout  Reussi !!!");
 
 
-		} catch (SQLException | FileNotFoundException e)  {
+		} catch (SQLException e)  {
 			System.out.println("Probleme de requête SQL");
 			e.printStackTrace();
 		}
@@ -112,31 +114,14 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
 				String type = rs.getString("type");
-				Blob img = rs.getBlob("photo");
-				byte  tof[] = new byte [(int) img.length()];
-				tof = img.getBytes(1, (int) img.length());
-				FileOutputStream fout = null;
-				try {
-					
-					
-						fout = new FileOutputStream("/home/diawara/Bureau/" + ".jpg");
-						 fout.write(tof);
-					
-					
-	                    
-				     fout.close();
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				String img = rs.getString("photo");
+				
+				
 		       
 				
 				
 				
-				 auto = new Automobile(idRecupere, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, type, fout);
+				 auto = new Automobile(idRecupere, moteurRecuperer, marqueRecuperer, modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer, descriptionRecuperer, type, img);
 				listeAuto.add(auto);
 			}
 

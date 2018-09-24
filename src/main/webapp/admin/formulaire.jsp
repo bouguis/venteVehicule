@@ -63,8 +63,8 @@
 							Help & FAQs
 						</a>
 
-						<a href="login" class="flex-c-m trans-04 p-lr-25">
-							Se Connecter
+						<a href="#" class="flex-c-m trans-04 p-lr-25">
+							Se Deconnecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -102,9 +102,9 @@
 								<a href="acceuil">Catalogue</a>
 							</li>
 
-<!-- 							<li class="label1" data-label1="hot"> -->
-<!-- 								<a href="formulaire">Gestion Catalogue</a> -->
-<!-- 							</li> -->
+							<li class="label1" data-label1="hot">
+								<a href="formulaire">Gestion Catalogue</a>
+							</li>
 
 							<li>
 								<a href="#">Solde</a>

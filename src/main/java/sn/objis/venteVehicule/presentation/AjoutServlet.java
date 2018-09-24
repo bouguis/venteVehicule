@@ -43,7 +43,7 @@ public class AjoutServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		request.getRequestDispatcher("client/formulaire.jsp").forward(request, response);
 		//Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
 		
@@ -55,7 +55,7 @@ public class AjoutServlet extends HttpServlet {
 		
 		
 		// Redirection
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("admin/acceuil.jsp");
 		rd.forward(request, response);
 				
 		
@@ -119,15 +119,8 @@ public class AjoutServlet extends HttpServlet {
 			System.out.println("Veuillez choisir Essence ou Electrique");
 		}
 		
-		
-
-		
-
-
-		
-		
 		// Redirection
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("admin/acceuil.jsp");
 		rd.forward(request, response);
 		
 		

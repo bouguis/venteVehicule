@@ -6,9 +6,6 @@
 	<title>Shoping Cart</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="resources/images/icons/favicon.png"/>
 <!--===============================================================================================-->
@@ -33,17 +30,6 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/util.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 <!--===============================================================================================-->
-   <link rel="apple-touch-icon" sizes="76x76" href="resources/assets/img/apple-icon.png">
-   <link rel="icon" type="image/png" href="resources/assets/img/favicon.png">
-   <!--     Fonts and icons     -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-
-	<!-- CSS Files -->
-    <link href="resources/assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="resources/assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
-
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="resources/assets/css/demo.css" rel="stylesheet" />
 </head>
 <body class="animsition">
 	
@@ -63,8 +49,8 @@
 							Help & FAQs
 						</a>
 
-						<a href="login" class="flex-c-m trans-04 p-lr-25">
-							Se Connecter
+						<a href="#" class="flex-c-m trans-04 p-lr-25">
+							Se Deconnecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -92,30 +78,30 @@
 							<li>
 								<a href="acceuil">Acceuil</a>
 								<ul class="sub-menu">
-									<li><a href="index.html"></a></li>
-									<li><a href="home-02.html"></a></li>
-									<li><a href="home-03.html"></a></li>
+									<li><a href="index.html">Homepage 1</a></li>
+									<li><a href="home-02.html">Homepage 2</a></li>
+									<li><a href="home-03.html">Homepage 3</a></li>
 								</ul>
 							</li>
 
 							<li>
-								<a href="acceuil">Catalogue</a>
+								<a href="product.html">Catalogue</a>
 							</li>
 
-<!-- 							<li class="label1" data-label1="hot"> -->
-<!-- 								<a href="formulaire">Gestion Catalogue</a> -->
-<!-- 							</li> -->
-
-							<li>
-								<a href="#">Solde</a>
+							<li class="label1" data-label1="hot">
+								<a href="formulaire">Gestion Catalogue</a>
 							</li>
 
 							<li>
-								<a href="#">A Propos</a>
+								<a href="blog.html">Solde</a>
 							</li>
 
 							<li>
-								<a href="#">Nous Contactez</a>
+								<a href="about.html">A Propos</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Nous Contactez</a>
 							</li>
 						</ul>
 					</div>	
@@ -203,9 +189,9 @@
 				<li>
 					<a href="acceuil">Acceuil</a>
 					<ul class="sub-menu-m">
-						<li><a href="index.html"></a></li>
-						<li><a href="home-02.html"></a></li>
-						<li><a href="home-03.html"></a></li>
+						<li><a href="index.html">Homepage 1</a></li>
+						<li><a href="home-02.html">Homepage 2</a></li>
+						<li><a href="home-03.html">Homepage 3</a></li>
 					</ul>
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -353,174 +339,174 @@
 		
 
 	<!-- Shoping Cart -->
-	 <div class="container">
-        <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+	<form class="bg0 p-t-75 p-b-85">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
+					<div class="m-l-25 m-r--38 m-lr-0-xl">
+						<div class="wrap-table-shopping-cart">
+							<table class="table-shopping-cart">
+								<tr class="table_head">
+									<th class="column-1">Product</th>
+									<th class="column-2"></th>
+									<th class="column-3">Price</th>
+									<th class="column-4">Quantity</th>
+									<th class="column-5">Total</th>
+								</tr>
 
-            <!--      Wizard container        -->
-            <div class="wizard-container">
+								<tr class="table_row">
+									<td class="column-1">
+										<div class="how-itemcart1">
+											<img src="resources/images/item-cart-04.jpg" alt="IMG">
+										</div>
+									</td>
+									<td class="column-2">Fresh Strawberries</td>
+									<td class="column-3">$ 36.00</td>
+									<td class="column-4">
+										<div class="wrap-num-product flex-w m-l-auto m-r-0">
+											<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+												<i class="fs-16 zmdi zmdi-minus"></i>
+											</div>
 
-                <div class="card wizard-card" data-color="orange" id="wizardProfile">
-                    <form action="ajout" method="post">
-                <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="1">
 
-                    	<div class="wizard-header">
-                        	<h3>
-                        	   <b>AJOUT</b> Voiture <br>
-                        	   <small></small>
-                        	</h3>
-                    	</div>
+											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+												<i class="fs-16 zmdi zmdi-plus"></i>
+											</div>
+										</div>
+									</td>
+									<td class="column-5">$ 36.00</td>
+								</tr>
 
-						<div class="wizard-navigation">
-							<ul>
-	                            <li><a href="#about" data-toggle="tab">Autres Caracteristiques</a></li>
-	                            <li><a href="#account" data-toggle="tab">Couleur</a></li>
-	                             <li><a href="#description" data-toggle="tab">Description</a></li>
-	                        </ul>
+								<tr class="table_row">
+									<td class="column-1">
+										<div class="how-itemcart1">
+											<img src="resources/images/item-cart-05.jpg" alt="IMG">
+										</div>
+									</td>
+									<td class="column-2">Lightweight Jacket</td>
+									<td class="column-3">$ 16.00</td>
+									<td class="column-4">
+										<div class="wrap-num-product flex-w m-l-auto m-r-0">
+											<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+												<i class="fs-16 zmdi zmdi-minus"></i>
+											</div>
 
+											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product2" value="1">
+
+											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+												<i class="fs-16 zmdi zmdi-plus"></i>
+											</div>
+										</div>
+									</td>
+									<td class="column-5">$ 16.00</td>
+								</tr>
+							</table>
 						</div>
 
-                        <div class="tab-content">
-                            <div class="tab-pane" id="about">
-                              <div class="row">
-                                  <h4 class="info-text"> </h4>
-                                  <div class="col-sm-4 col-sm-offset-1">
-                                     <div class="picture-container">
-                                     <!--  -->
-                                          <div class="picture">
-                                              <img src="resources/assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                              <input type="file" id="wizard-picture" name="photo">
-                                          </div>
-                                          <h6>Voiture</h6>
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-6">
-                                      <div class="form-group">
-                                        <label>Moteur <small>(required)</small></label>
-                                        <input name="moteur" type="text" class="form-control" placeholder="Expl:">
-                                      </div>
-                                      <div class="form-group">
-                                        <label>Marque <small>(required)</small></label>
-                                        <input name="marque" type="text" class="form-control" placeholder="Expl:">
-                                      </div>
-                                  </div>
-                                  <div class="col-sm-10 col-sm-offset-1">
-                                      <div class="form-group">
-                                          <label>Model <small>(required)</small></label>
-                                          <input name="model" type="text" class="form-control" placeholder="Expl:">
-                                      </div>
-                                      
-                                  </div>
-                                  <div class="col-sm-10 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Prix</label>
-                                            <input type="text" name="prix" class="form-control" placeholder="1200000f">
-                                          </div>
-                                    </div>
-                                     <div class="col-sm-10 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Nombres de Places</label>
-                                            <input type="text" name="nombre" class="form-control" placeholder="5">
-                                          </div>
-                                    </div>
-                                     <div class="col-sm-10 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Type de vehicule</label><br>
-                                             <select name="auto" class="form-control">
-                                                <option value="electrique">Electrique</option>
-                                                <option value="essence">Essence</option>
-                                            </select>
-                                          </div>
-                                    </div>
-                              </div>
-                            </div>
-                            <div class="tab-pane" id="account">
-                                <h4 class="info-text"> Choisissez votre couleur</h4>
-                                <div class="row">
+						<div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
+							<div class="flex-w flex-m m-r-20 m-tb-5">
+								<input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text" name="coupon" placeholder="Coupon Code">
+									
+								<div class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
+									Apply coupon
+								</div>
+							</div>
 
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <div class="col-sm-3">
-                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #A9A9A9" >
-                                                <input type="checkbox" name="couleur" value="gris">
-                                                <div class="icon"  style="color: #A9A9A9" >
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Gris</h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3" >
-                                            <div class="choice" data-toggle="wizard-checkbox"  style="color: red">
-                                                <input type="checkbox" name="couleur" value="rouge">
-                                                <div class="icon"  style="color: red">
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Rouge</h6>
-                                            </div>
+							<div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+								Update Cart
+							</div>
+						</div>
+					</div>
+				</div>
 
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #000000">
-                                                <input type="checkbox" name="couleur" value="blanc">
-                                                <div class="icon">
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Blanc</h6>
-                                            </div>
+				<div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
+					<div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+						<h4 class="mtext-109 cl2 p-b-30">
+							Cart Totals
+						</h4>
 
-                                        </div>
-                                         <div class="col-sm-3">
-                                            <div class="choice" data-toggle="wizard-checkbox" style="color: #191970">
-                                                <input type="checkbox" name="couleur" value="bleu">
-                                                <div class="icon" style="color: #191970">
-                                                    <i class="fa fa-car"></i>
-                                                </div>
-                                                <h6>Bleu</h6>
-                                            </div>
+						<div class="flex-w flex-t bor12 p-b-13">
+							<div class="size-208">
+								<span class="stext-110 cl2">
+									Subtotal:
+								</span>
+							</div>
 
-                                        </div>
-                                    </div>
+							<div class="size-209">
+								<span class="mtext-110 cl2">
+									$79.65
+								</span>
+							</div>
+						</div>
 
-                                </div>
-                            </div>
-                           
-                              <div class="tab-pane" id="description">
-                                <div class="row">
-                                    <h4 class="info-text">  </h4>
-                                    <div class="col-sm-6 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label> Description</label>
-                                            <textarea class="form-control" name="description" placeholder="" rows="9">
-                                            </textarea>
-                                          </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                         <div class="form-group">
-                                            <label></label>
-                                            
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wizard-footer height-wizard">
-                            <div class="pull-right">
-                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type="submit"  class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name="action" value='Finish' />
+						<div class="flex-w flex-t bor12 p-t-15 p-b-30">
+							<div class="size-208 w-full-ssm">
+								<span class="stext-110 cl2">
+									Shipping:
+								</span>
+							</div>
 
-                            </div>
+							<div class="size-209 p-r-18 p-r-0-sm w-full-ssm">
+								<p class="stext-111 cl6 p-t-2">
+									There are no shipping methods available. Please double check your address, or contact us if you need any help.
+								</p>
+								
+								<div class="p-t-15">
+									<span class="stext-112 cl8">
+										Calculate Shipping
+									</span>
 
-                            <div class="pull-left">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+									<div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
+										<select class="js-select2" name="time">
+											<option>Select a country...</option>
+											<option>USA</option>
+											<option>UK</option>
+										</select>
+										<div class="dropDownSelect2"></div>
+									</div>
 
-                    </form>
-                </div>
-            </div> <!-- wizard container -->
-        </div>
-        </div><!-- end row -->
-    </div> <!--  big container -->
+									<div class="bor8 bg0 m-b-12">
+										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="state" placeholder="State /  country">
+									</div>
+
+									<div class="bor8 bg0 m-b-22">
+										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="postcode" placeholder="Postcode / Zip">
+									</div>
+									
+									<div class="flex-w">
+										<div class="flex-c-m stext-101 cl2 size-115 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer">
+											Update Totals
+										</div>
+									</div>
+										
+								</div>
+							</div>
+						</div>
+
+						<div class="flex-w flex-t p-t-27 p-b-33">
+							<div class="size-208">
+								<span class="mtext-101 cl2">
+									Total:
+								</span>
+							</div>
+
+							<div class="size-209 p-t-1">
+								<span class="mtext-110 cl2">
+									$79.65
+								</span>
+							</div>
+						</div>
+
+						<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+							Proceed to Checkout
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+		
 	
 		
 
@@ -715,16 +701,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</script>
 <!--===============================================================================================-->
 	<script src="resources/js/main.js"></script>
-	<!--   Core JS Files   -->
-	<script src="resources/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-	<script src="resources/assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="resources/assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-
-	<!--  Plugin for the Wizard -->
-	<script src="resources/assets/js/gsdk-bootstrap-wizard.js"></script>
-
-	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-	<script src="resources/assets/js/jquery.validate.min.js"></script>
 
 </body>
 </html>

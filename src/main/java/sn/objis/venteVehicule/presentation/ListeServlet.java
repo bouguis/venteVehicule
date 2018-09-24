@@ -49,7 +49,7 @@ public class ListeServlet extends HttpServlet {
 		request.setAttribute("catalogue", catalogues);
 		
 		// Redirection ves la page qui dois afficher la liste
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("client/acceuil.jsp");
 		rd.forward(request, response);
 		
 	}

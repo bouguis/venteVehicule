@@ -49,8 +49,8 @@
 							Help & FAQs
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							My Account
+						<a href="login" class="flex-c-m trans-04 p-lr-25">
+							Se Connecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -76,32 +76,32 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="index.html">Home</a>
+								<a href="acceuil">Acceuil</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
-									<li><a href="home-02.html">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
+									<li><a href="index.html"></a></li>
+									<li><a href="home-02.html"></a></li>
+									<li><a href="home-03.html"></a></li>
 								</ul>
 							</li>
 
 							<li>
-								<a href="product.html">Shop</a>
+								<a href="acceuil">Catalogue</a>
 							</li>
 
-							<li class="label1" data-label1="hot">
-								<a href="shoping-cart.html">Features</a>
+<!-- 							<li class="label1" data-label1="hot"> -->
+<!-- 								<a href="formulaire">Gestion Catalogue</a> -->
+<!-- 							</li> -->
+
+							<li>
+								<a href="#">Solde</a>
 							</li>
 
 							<li>
-								<a href="blog.html">Blog</a>
-							</li>
-
-							<li>
-								<a href="about.html">About</a>
+								<a href="#">A Propos</a>
 							</li>
 
 							<li class="active-menu">
-								<a href="contact.html">Contact</a>
+								<a href="">Nous Contactez</a>
 							</li>
 						</ul>
 					</div>	
@@ -324,11 +324,11 @@
 
 
 	<!-- Title page -->
-	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('resources/images/mercedes1.jpeg');">
-		<h2 class="ltext-105 cl0 txt-center">
-			Contact
-		</h2>
-	</section>	
+<!-- 	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('resources/images/mercedes1.jpeg');"> -->
+<!-- 		<h2 class="ltext-105 cl0 txt-center"> -->
+<!-- 			Contact -->
+<!-- 		</h2> -->
+<!-- 	</section>	 -->
 
 
 	<!-- Content page -->
@@ -336,21 +336,45 @@
 		<div class="container">
 			<div class="flex-w flex-tr">
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-					<form>
+					<form action="ajoutClient" method="post">
 						<h4 class="mtext-105 cl2 txt-center p-b-30">
-							Send Us A Message
+							Ajout Client
 						</h4>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
-							<img class="how-pos4 pointer-none" src="resources/images/icons/icon-email.png" alt="ICON">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="nom" placeholder="Nom">
+<!-- 							<img class="how-pos4 pointer-none" src="resources/images/icons/icon-email.png" alt="ICON"> -->
 						</div>
 
 						<div class="bor8 m-b-30">
-							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="prenom" placeholder="Prenom">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							 <select name="sexe" class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30">
+                                      <option value="masculin">M</option>
+                                      <option value="feminin">F</option>
+                         	 </select>
+							
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="adresse" placeholder="Adresse">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Email">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="tel" placeholder="Telephone">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="code" placeholder="Code Client">
 						</div>
 
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer" type="submit" name="action">
 							Submit
 						</button>
 					</form>
@@ -542,7 +566,6 @@
 					<a href="#" class="m-all-1">
 						<img src="resources/images/icons/icon-pay-03.png" alt="ICON-PAY">
 					</a>
-
 					<a href="#" class="m-all-1">
 						<img src="resources/images/icons/icon-pay-04.png" alt="ICON-PAY">
 					</a>
@@ -565,7 +588,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
-		<span class="symbol-btn-back-to-top">
+		<span class="symbol-btn-back-to-top">=
 			<i class="zmdi zmdi-chevron-up"></i>
 		</span>
 	</div>
