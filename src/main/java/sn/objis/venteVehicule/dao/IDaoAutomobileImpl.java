@@ -134,8 +134,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 	public void update(Automobile t) {
 
 			try {
-				f = new File("/home/diawara/Bureau/voitures"+ "/" + t.getPhoto());
-				 istreamImage = new FileInputStream(f);
+			
 
 			// Etape 1 : Préparation de la Requête
 			String sql = "UPDATE automoble SET moteur=?, marque=?, model=?, couleur=?, prix=?, nbrPlace=?, description=?, photo=? WHERE id_automobile=? ";
@@ -160,7 +159,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			pst.setString(7, t.getDescription());
 			pst.setString(8, t.getType());
 			
-			pst.setBinaryStream(9, istreamImage, (int)f.length());
+			pst.setString(9, t.getPhoto());
 
 			// Etape 3 : Execution e la requête
 			pst.executeUpdate();
@@ -168,7 +167,7 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			System.out.println("Mise a jour Reussie !!!");
 
 
-		} catch (SQLException | FileNotFoundException e)  {
+		} catch (SQLException e)  {
 			System.out.println("Probleme de requête SQL");
 			e.printStackTrace();
 		}
@@ -232,30 +231,11 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
 				String descriptionRecuperer = rs.getString("description");
 				String type = rs.getString("type");
-				Blob img = rs.getBlob("photo");
-				byte  tof[] = new byte [(int) img.length()];
-				tof = img.getBytes(1, (int) img.length());
-				FileOutputStream fout = null;
-				try {
-					
-					
-						fout = new FileOutputStream("/home/diawara/Bureau/" + ".jpg");
-						 fout.write(tof);
-					
-					
-	                    
-				     fout.close();
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				String img = rs.getString("photo");
 				
 				 auto = new Automobile(idRecupere, moteurRecuperer, marqueRecuperer, 
 						 modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer,
-						 descriptionRecuperer, type, fout);
+						 descriptionRecuperer, type, img);
 			
 			}
 			}catch (SQLException e) {

@@ -5,7 +5,7 @@
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
 
-	
+
 	<servlet>
 		<servlet-name>AcceuilServlet</servlet-name>
 		<display-name>AcceuilServlet</display-name>
@@ -18,12 +18,7 @@
 		<description></description>
 		<servlet-class>sn.objis.venteVehicule.presentation.AjoutServlet</servlet-class>
 	</servlet>
-	<servlet>
-		<servlet-name>ListeServlet</servlet-name>
-		<display-name>ListeServlet</display-name>
-		<description></description>
-		<servlet-class>sn.objis.venteVehicule.presentation.ListeServlet</servlet-class>
-	</servlet>
+
 	<servlet>
 		<servlet-name>EditerServlet</servlet-name>
 		<display-name>EditerServlet</display-name>
@@ -42,7 +37,7 @@
 		<description></description>
 		<servlet-class>sn.objis.venteVehicule.presentation.LoginServlet</servlet-class>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>AcceuilServlet</servlet-name>
 		<url-pattern>/acceuil</url-pattern>
@@ -51,10 +46,7 @@
 		<servlet-name>AjoutServlet</servlet-name>
 		<url-pattern>/ajout</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>ListeServlet</servlet-name>
-		<url-pattern>/lister</url-pattern>
-	</servlet-mapping>
+
 	<servlet-mapping>
 		<servlet-name>EditerServlet</servlet-name>
 		<url-pattern>/editer</url-pattern>

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import sn.objis.venteVehicule.domaine.Automobile;
 import sn.objis.venteVehicule.service.CreationAutoEssence;
+import sn.objis.venteVehicule.service.VisionVehicule;
 
 
 
@@ -47,9 +48,10 @@ public class EditerServlet extends HttpServlet {
 		// Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
 		// Instantiation service
-		CreationAutoEssence essence = new CreationAutoEssence(con);
+		//CreationAutoEssence essence = new CreationAutoEssence(con);
+		VisionVehicule vision = new VisionVehicule(con);
 		// recherche du client
-		autoRechercher = essence.rechercheId(idEdit);
+		autoRechercher = vision.decrit(idEdit);
 		// Ajout des donnees dans un scope
 		request.setAttribute("auto", autoRechercher);
 		// Redirection
