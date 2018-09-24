@@ -24,8 +24,6 @@ public class Commande {
 		super();
 	}
 
-	
-	
 	public Commande(long idCommande, Date dateCommande, Client client, List<Automobile> listeAutos) {
 		super();
 		this.idCommande = idCommande;
@@ -34,7 +32,18 @@ public class Commande {
 		this.listeAutos = listeAutos;
 	}
 
+	public Commande(Date dateCommande, Client client) {
+		super();
+		this.dateCommande = dateCommande;
+		this.client = client;
+	}
 
+	public Commande(long idCommande, Date dateCommande, Client client) {
+		super();
+		this.idCommande = idCommande;
+		this.dateCommande = dateCommande;
+		this.client = client;
+	}
 
 	//Getters et setters
 	

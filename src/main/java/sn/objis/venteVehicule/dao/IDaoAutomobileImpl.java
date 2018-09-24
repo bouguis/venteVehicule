@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.sql.Blob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,7 +15,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.imageio.ImageIO;
+
 
 import sn.objis.venteVehicule.domaine.Automobile;
 
@@ -37,8 +36,6 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 	@Override
 	public void ajouter(Automobile t) {
-		
-		
 		
 		try {
 			f = new File("/home/diawara/Bureau/voitures"+ "/" + t.getPhoto());
@@ -150,37 +147,46 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 
 	@Override
 	public void update(Automobile t) {
-		
-		try {
+
+			try {
+				f = new File("/home/diawara/Bureau/voitures"+ "/" + t.getPhoto());
+				 istreamImage = new FileInputStream(f);
 
 			// Etape 1 : Préparation de la Requête
-			String sql = "UPDATE automoble SET moteur=?, marque=?, model=?, couleur=?, prix=?, nbrPlace=?, description=?, photo=? WHERE id_agentmairie=? ";
+			String sql = "UPDATE automoble SET moteur=?, marque=?, model=?, couleur=?, prix=?, nbrPlace=?, description=?, photo=? WHERE id_automobile=? ";
 
 			//Recuperation d'une zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
 
 			// Etape 2 : Transmission des valeurs aux paramétres de la requête
 			
-			pst.setString(1, t.getPhoto());
-			pst.setString(2, t.getMoteur());
-			pst.setString(3, t.getMarque());
-			pst.setString(4, t.getModel());
-			pst.setString(5, t.getCouleur());
-			pst.setDouble(6, t.getPrix());
-			pst.setInt(7, t.getNbrPlace());
-			pst.setString(8, t.getDescription());
+			pst.setString(1, t.getMoteur());
+
+			pst.setString(2, t.getMarque());
+
+			pst.setString(3, t.getModel());
+
+			pst.setString(4, t.getCouleur());
 			
-			//Etape 3 : Execution de la requête
+			pst.setDouble(5, t.getPrix());
 			
+			pst.setInt(6, t.getNbrPlace());
+			
+			pst.setString(7, t.getDescription());
+			pst.setString(8, t.getType());
+			
+			pst.setBinaryStream(9, istreamImage, (int)f.length());
+
+			// Etape 3 : Execution e la requête
 			pst.executeUpdate();
 			
-			System.out.println("Modification Réussie !!!");
+			System.out.println("Mise a jour Reussie !!!");
 
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+
+		} catch (SQLException | FileNotFoundException e)  {
+			System.out.println("Probleme de requête SQL");
 			e.printStackTrace();
 		}
-
 		
 	}
 
@@ -205,11 +211,9 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			System.out.println("Suppression Reussie !!!");
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println("Probleme de requete SQL!!!");
 			e.printStackTrace();
 		}
-
-		
 	}
 
 	@Override
@@ -234,27 +238,47 @@ public class IDaoAutomobileImpl implements IDaoAutomobile{
 			// Etape 4 : Traitement du resultat
 
 			while (rs.next()) {
-
-				long idAuto = rs.getLong("id_automobile");
-				String photo = rs.getString("photo");
-				String moteur = rs.getString("moteur");
-				String marque = rs.getString("marque");
-				String model = rs.getString("model");
-				String couleur = rs.getString("couleur");
-				Double prix = rs.getDouble("prix");
-				int nbrPlace = rs.getInt("nbrPlace");
-				String description = rs.getString("description");
+	 			long idRecupere = rs.getLong("id_automobile");
+				String moteurRecuperer = rs.getString("moteur");
+				String marqueRecuperer = rs.getString("marque");
+				String modelRecuperer = rs.getString("model");
+				String couleurRecuperer = rs.getString("couleur");
+				Double prixRecuperer = rs.getDouble("prix");
+				int nbrPlaceRecuperer = rs.getInt("nbrPlace");
+				String descriptionRecuperer = rs.getString("description");
 				String type = rs.getString("type");
+				Blob img = rs.getBlob("photo");
+				byte  tof[] = new byte [(int) img.length()];
+				tof = img.getBytes(1, (int) img.length());
+				FileOutputStream fout = null;
+				try {
+					
+					
+						fout = new FileOutputStream("/home/diawara/Bureau/" + ".jpg");
+						 fout.write(tof);
+					
+					
+	                    
+				     fout.close();
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				 auto = new Automobile(idRecupere, moteurRecuperer, marqueRecuperer, 
+						 modelRecuperer, couleurRecuperer, prixRecuperer, nbrPlaceRecuperer,
+						 descriptionRecuperer, type, fout);
 			
-
-			auto = new Automobile(idAuto, moteur, marque, model, couleur, prix, nbrPlace, description, type, photo);
-
 			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+			}catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+				 
 		return auto;
 	}
 

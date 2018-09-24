@@ -2,7 +2,10 @@ package sn.objis.venteVehicule.service;
 
 import java.util.List;
 
+import sn.objis.venteVehicule.domaine.Automobile;
+
 public interface IPresentationCatalogue {
-	void presente (List<VisionVehicule> contenu);
+	
+	public List<Automobile> presente();
 
 }
