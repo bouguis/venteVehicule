@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import sn.objis.venteVehicule.domaine.Automobile;
 import sn.objis.venteVehicule.service.CreationAutoElectrique;
 import sn.objis.venteVehicule.service.CreationAutoEssence;
+import sn.objis.venteVehicule.service.PresenteTroisVehicule;
 /**
  * Servlet implementation class AjoutServlet
  */
@@ -47,11 +48,12 @@ public class AjoutServlet extends HttpServlet {
 		//Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
 		
-		CreationAutoElectrique electrique = new CreationAutoElectrique(con);
-		CreationAutoEssence essence = new CreationAutoEssence(con);
+//		CreationAutoElectrique electrique = new CreationAutoElectrique(con);
+//		CreationAutoEssence essence = new CreationAutoEssence(con);
+		PresenteTroisVehicule presentation = new PresenteTroisVehicule(con);
 		
 		// Utilisation d'un scope pour afficher
-		request.setAttribute("catalogue", essence.findAll() );
+		request.setAttribute("catalogue", presentation.presente() );
 		
 		
 		// Redirection
