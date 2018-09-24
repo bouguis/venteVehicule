@@ -1,36 +1,24 @@
 package sn.objis.venteVehicule.service;
 
+import java.sql.Connection;
+
+import sn.objis.venteVehicule.dao.IDaoAutomobileImpl;
 import sn.objis.venteVehicule.domaine.Automobile;
 
-public class VisionVehicule implements IGraphismeVehicule {
+public class VisionVehicule {
 	
-	Automobile auto;
-	ModelDecorateur modele;
-	MarqueDecorateur marque;
-	AnimationProxy animation;
+	Connection con;
+	private IDaoAutomobileImpl dao;
 	
-	protected String description = auto.getDescription();
-
-	public VisionVehicule(String description) {
+	public VisionVehicule(Connection con) {
 		super();
-		this.description = description;
-	}
-	
-	public void decrit() {
-		
-		System.out.println(description);
-		modele.affiche();
-		marque.affiche();
-		
+		this.con = con;
+		dao = new IDaoAutomobileImpl(con);
 	}
 
-	@Override
-	public void affiche() {
-		System.out.println("Affichage du vehicule");
+	public Automobile decrit(long id) {
 		
-		animation.dessine();
-		animation.clic();
-		animation.dessine();
+		return dao.findbyId(id);		
 	}
 
 }

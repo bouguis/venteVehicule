@@ -7,7 +7,7 @@ package sn.objis.venteVehicule.domaine;
  * @author HP
  *
  */
-public class administrateur {
+public class Administrateur {
 	//proprietes
 	private long idAdmin;
 	private String nom;
@@ -18,7 +18,7 @@ public class administrateur {
 	/**
 	 *Constructeur sans parametre 
 	 */
-	public administrateur() {
+	public Administrateur() {
 		super();
 	}
 
@@ -26,12 +26,19 @@ public class administrateur {
 	 * @param nom
 	 * @param prenom
 	 */
-	public administrateur(String nom, String prenom) {
+	public Administrateur(String nom, String prenom) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 	}
 	
+	public Administrateur(long idAdmin, String nom, String prenom) {
+		super();
+		this.idAdmin = idAdmin;
+		this.nom = nom;
+		this.prenom = prenom;
+	}
+
 	//Getters et Setters
 
 	public long getIdAdmin() {

@@ -26,6 +26,23 @@ public class Client {
 		super();
 	}
 
+
+	public Client(long idClient, String nom, String prenom, String sexe, String adresse, String email, String tel,
+			String codeClient) {
+		super();
+		this.idClient = idClient;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.sexe = sexe;
+		this.adresse = adresse;
+		this.email = email;
+		this.tel = tel;
+		this.codeClient = codeClient;
+	}
+
+
+
+
 	public Client(String nom, String prenom, String sexe, String adresse, String email, String tel, String codeClient) {
 		super();
 		this.nom = nom;
@@ -34,7 +51,7 @@ public class Client {
 		this.adresse = adresse;
 		this.email = email;
 		this.tel = tel;
-		
+
 		this.codeClient = codeClient;
 	}
 	
@@ -96,7 +113,6 @@ public class Client {
 		this.tel = tel;
 	}
 
-	
 
 	public String getCodeClient() {
 		return codeClient;
