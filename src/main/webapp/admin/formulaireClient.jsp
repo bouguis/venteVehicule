@@ -76,7 +76,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="acceuil">Acceuil</a>
+								<a href="acceuilAdmin">Acceuil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html"></a></li>
 									<li><a href="home-02.html"></a></li>
@@ -85,7 +85,7 @@
 							</li>
 
 							<li>
-								<a href="acceuil">Catalogue</a>
+								<a href="catalogue">Catalogue</a>
 							</li>
 
 							<li class="label1" data-label1="hot">

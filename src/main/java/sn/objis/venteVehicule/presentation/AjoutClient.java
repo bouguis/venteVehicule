@@ -10,8 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import sn.objis.venteVehicule.dao.IDaoClientImpl;
+import sn.objis.venteVehicule.domaine.Automobile;
 import sn.objis.venteVehicule.domaine.Client;
+import sn.objis.venteVehicule.domaine.Commande;
 import sn.objis.venteVehicule.service.CommandePassee;
+import sn.objis.venteVehicule.service.PresenteTroisVehicule;
+import sn.objis.venteVehicule.service.VisionVehicule;
 
 /**
  * Servlet implementation class AjoutClient
@@ -40,6 +44,7 @@ public class AjoutClient extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		// Redirection
 		RequestDispatcher rd = request.getRequestDispatcher("client/formulaireClient.jsp");
 		rd.forward(request, response);
@@ -62,13 +67,19 @@ public class AjoutClient extends HttpServlet {
 		String tel = request.getParameter("tel");
 		String codeClient = request.getParameter("code");
 
+		String dateCommande = request.getParameter("dateCommande");
+		
+
 		// Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
 		CommandePassee ajoutclient = new CommandePassee(con);
+
 		// IDaoClientImpl ajoutclient = new IDaoClientImpl(con);
 
 		Client client = new Client(nom, prenom, sexe, adresse, email, tel, codeClient);
 		ajoutclient.ajoutClient(client);
+		Commande commande = new Commande(dateCommande, client);
+		ajoutclient.valideCommande(commande);
 
 		// Redirection
 		RequestDispatcher rd = request.getRequestDispatcher("client/acceuil.jsp");

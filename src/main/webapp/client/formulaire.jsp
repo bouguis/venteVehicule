@@ -99,7 +99,7 @@
 							</li>
 
 							<li>
-								<a href="acceuil">Catalogue</a>
+								<a href="catalogue">Catalogue</a>
 							</li>
 
 <!-- 							<li class="label1" data-label1="hot"> -->

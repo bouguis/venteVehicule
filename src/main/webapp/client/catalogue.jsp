@@ -73,8 +73,8 @@
 							Help & FAQs
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Se Deconnecter
+						<a href="login" class="flex-c-m trans-04 p-lr-25">
+							Se Connecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -109,12 +109,12 @@
 							</li>
 
 							<li>
-								<a href="acceuil">Catalogue</a>
+								<a href="catalogue">Catalogue</a>
 							</li>
 
-							<li class="label1" data-label1="hot">
-								<a href="formulaire">Gestion Catalogue</a>
-							</li>
+<!-- 							<li class="label1" data-label1="hot"> -->
+<!-- 								<a href="ajout">Gestion Catalogue</a> -->
+<!-- 							</li> -->
 
 							<li>
 								<a href="#">Solde</a>
@@ -125,7 +125,7 @@
 							</li>
 
 							<li>
-								<a href="ajoutClient">Nous Contactez</a>
+								<a href="#">Nous Contactez</a>
 							</li>
 						</ul>
 					</div>	
@@ -349,83 +349,7 @@
 		
 
 	<!-- Slider -->
-	<section class="section-slide">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(resources/images/bmw-serie-2.jpg);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									Women Collection 2018
-								</span>
-							</div>
-								
-							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									NEW SEASON
-								</h2>
-							</div>
-								
-							<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Shop Now
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick1" style="background-image: url(resources/images/v1.jpg);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									Men New-Season
-								</span>
-							</div>
-								
-							<div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									Jackets & Coats
-								</h2>
-							</div>
-								
-							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Shop Now
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick1" style="background-image: url(resources/images/r2.jpg);">
-					<div class="container h-full">
-						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-							<div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
-								<span class="ltext-101 cl2 respon2">
-									Men Collection 2018
-								</span>
-							</div>
-								
-							<div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
-								<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-									New arrivals
-								</h2>
-							</div>
-								
-							<div class="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Shop Now
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 
 
 	<!-- Banner -->
@@ -435,22 +359,22 @@
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
-						<img src="resources/images/banner-01.jpg" alt="IMG-BANNER">
+						<img src="resources/images/ranger1.jpeg" alt="IMG-BANNER">
 
-						<a href="product.html" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+						<a href="#" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Women
+									Ranger
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									Spring 2018
+									Serie 2018
 								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">
 								<div class="block1-link stext-101 cl0 trans-09">
-									Shop Now
+									
 								</div>
 							</div>
 						</a>
@@ -460,22 +384,22 @@
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
-						<img src="resources/images/banner-02.jpg" alt="IMG-BANNER">
+						<img src="resources/images/bmw-serie-2.jpg" alt="IMG-BANNER">
 
-						<a href="product.html" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+						<a href="#" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Men
+									BMW
 								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									Spring 2018
+									X6,X5
 								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">
 								<div class="block1-link stext-101 cl0 trans-09">
-									Shop Now
+									
 								</div>
 							</div>
 						</a>
@@ -485,22 +409,22 @@
 				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
 					<!-- Block1 -->
 					<div class="block1 wrap-pic-w">
-						<img src="resources/images/banner-03.jpg" alt="IMG-BANNER">
+						<img src="resources/images/c2.jpeg" alt="IMG-BANNER">
 
-						<a href="product.html" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+						<a href="#" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
 							<div class="block1-txt-child1 flex-col-l">
 								<span class="block1-name ltext-102 trans-04 p-b-8">
-									Accessories
-								</span>formulaire
+									Chevrolet
+								</span>
 
 								<span class="block1-info stext-102 trans-04">
-									New Trend
+									Serie 2018
 								</span>
 							</div>
 
 							<div class="block1-txt-child2 p-b-4 trans-05">
 								<div class="block1-link stext-101 cl0 trans-09">
-									Shop Now
+									
 								</div>
 							</div>
 						</a>
@@ -511,48 +435,6 @@
 	</div>
 
 
-	<div class="card-body">
-		<div class="table-responsive">
-			<form action="ajout" method="post">
-				<table class="table table-hover" id="tableau_client">
-					<thead class="">
-						<th>Id</th>
-						<th>Photo</th>
-						<th>Moteur</th>
-						<th>Marque</th>
-						<th>Model</th>
-						<th>Couleur</th>
-
-						<th>Action</th>
-					</thead>
-					<tbody>
-						<c:forEach items="${catalogue}"  var="rep">
-							<tr>
-								<td>${rep.idAuto}</td>
-								<td>${rep.fout}</td>
-								<td>${rep.moteur}</td>
-								<td>${rep.marque}</td>
-								<td>${rep.model}</td>
-								<td>${rep.couleur}</td>
-								<td><a href="editer?idEdit=${rep.idAuto}"><button
-											type="button" rel="tooltip" title="Modifier"
-											class="btn btn-primary btn-link btn-sm">
-											<i class="material-icons">edit</i>
-										</button></a>
-										 <a href="supprimer?idSup=${rep.idAuto}"><button
-											type="button" rel="tooltip" title="Supprimer"
-											class="btn btn-danger btn-link btn-sm">
-											<i class="material-icons">close</i>
-										</button> </a>
-								</td>
-							</tr>
-						</c:forEach>
-
-					</tbody>
-				</table>
-			</form>
-		</div>
-	</div>
 
 
 	<!-- Product -->
@@ -815,11 +697,11 @@
 					
 					<div class="block2">
 						<div class="block2-pic hov-img0">
-							<img src="${rep.img}"   alt="IMG-PRODUCT">
+							<img src="${rep.photo}"   alt="IMG-PRODUCT">
 							     
 
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
+							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1 ">
+								Voir Ctalogue
 							</a>
 						</div>
 
@@ -849,494 +731,236 @@
 				</c:forEach>
 				
 
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/bmw-x6.jpg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									 Bmw X6 2018
-									 <% 
-									
-									 %>
-								</a>
-
-								<span class="stext-105 cl3">
-									$35.31
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 				
 				              
-                <c:forEach var="rep" items="${auto}">	
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">	
-				 
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-								<img src="resources/images/mercedes1.jpeg" alt="IMG-PRODUCT">				
-							<a href="editer?idEdit=${rep.idAuto}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
+               
 
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Mercedes 2018
-								</a>
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item chevrolet"> -->
+<!-- <!-- 					Block2 --> -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/c1.jpeg" alt="IMG-PRODUCT"> -->
 
-								<span class="stext-105 cl3">
-									$25.50
-								</span>
-							</div>
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Quick View -->
+<!-- 							</a> -->
+<!-- 						</div> -->
 
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									Chevrolet -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$25.85 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes"> -->
+<!-- 					Block2 -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/mercedes2.jpeg" alt="IMG-PRODUCT"> -->
+
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Quick View -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									Mercedes 2017 -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$63.16 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes"> -->
+<!-- 					Block2 -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/mercedes3.jpeg" alt="IMG-PRODUCT"> -->
+
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Quick View -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									Mercedes 2016 -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$63.15 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item volkswagen"> -->
+<!-- <!-- 					Block2 --> -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/v2.jpeg" alt="IMG-PRODUCT"> -->
+
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Quick View -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									Volkswagen -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$18.49 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item volkswagen"> -->
+<!-- <!-- 					Block2 --> -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/v1.jpg" alt="IMG-PRODUCT"> -->
+
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Quick View -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									volkswagen -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$54.79 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item renault"> -->
+<!-- <!-- 					Block2 --> -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/r1.jpg" alt="IMG-PRODUCT"> -->
+
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Quick View -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									Renault -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$86.85 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+
+<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item renault"> -->
+<!-- <!-- 					Block2 --> -->
+<!-- 					<div class="block2"> -->
+<!-- 						<div class="block2-pic hov-img0"> -->
+<!-- 							<img src="resources/images/r2.jpg" alt="IMG-PRODUCT"> -->
+
+<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
+<!-- 								Renault -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+
+<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
+<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
+<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
+<!-- 									Square Neck Back -->
+<!-- 								</a> -->
+
+<!-- 								<span class="stext-105 cl3"> -->
+<!-- 									$29.64 -->
+<!-- 								</span> -->
+<!-- 							</div> -->
+
+<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
+<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
+<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
+<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
+<!-- 								</a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 					
-				</div>
-				</c:forEach>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item BMW">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/bmw-serie-3-gt.jpg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									 Bmw Serie 3 gt
-								</a>
-
-								<span class="stext-105 cl3">
-									$75.00
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women"> -->
-<!-- 					Block2 -->
-<!-- 					<div class="block2"> -->
-<!-- 						<div class="block2-pic hov-img0"> -->
-<!-- 							<img src="resources/images/product-05.jpg" alt="IMG-PRODUCT"> -->
-
-<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
-<!-- 								Quick View -->
-<!-- 							</a> -->
-<!-- 						</div> -->
-
-<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
-<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
-<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
-<!-- 									Front Pocket Jumper -->
-<!-- 								</a> -->
-
-<!-- 								<span class="stext-105 cl3"> -->
-<!-- 									$34.75 -->
-<!-- 								</span> -->
-<!-- 							</div> -->
-
-<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
-<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
-<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
-<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
-<!-- 								</a> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item watches"> -->
-<!-- 					Block2 -->
-<!-- 					<div class="block2"> -->
-<!-- 						<div class="block2-pic hov-img0"> -->
-<!-- 							<img src="resources/images/product-06.jpg" alt="IMG-PRODUCT"> -->
-
-<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
-<!-- 								Quick View -->
-<!-- 							</a> -->
-<!-- 						</div> -->
-
-<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
-<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
-<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
-<!-- 									Vintage Inspired Classic  -->
-<!-- 								</a> -->
-
-<!-- 								<span class="stext-105 cl3"> -->
-<!-- 									$93.20 -->
-<!-- 								</span> -->
-<!-- 							</div> -->
-
-<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
-<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
-<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
-<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
-<!-- 								</a> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women"> -->
-<!-- 					Block2 -->
-<!-- 					<div class="block2"> -->
-<!-- 						<div class="block2-pic hov-img0"> -->
-<!-- 							<img src="resources/images/product-07.jpg" alt="IMG-PRODUCT"> -->
-
-<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
-<!-- 								Quick View -->
-<!-- 							</a> -->
-<!-- 						</div> -->
-
-<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
-<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
-<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
-<!-- 									Shirt in Stretch Cotton -->
-<!-- 								</a> -->
-
-<!-- 								<span class="stext-105 cl3"> -->
-<!-- 									$52.66 -->
-<!-- 								</span> -->
-<!-- 							</div> -->
-
-<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
-<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
-<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
-<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
-<!-- 								</a> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-<!-- 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women"> -->
-<!-- 					Block2 -->
-<!-- 					<div class="block2"> -->
-<!-- 						<div class="block2-pic hov-img0"> -->
-<!-- 							<img src="resources/images/product-08.jpg" alt="IMG-PRODUCT"> -->
-
-<!-- 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"> -->
-<!-- 								Quick View -->
-<!-- 							</a> -->
-<!-- 						</div> -->
-
-<!-- 						<div class="block2-txt flex-w flex-t p-t-14"> -->
-<!-- 							<div class="block2-txt-child1 flex-col-l "> -->
-<!-- 								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"> -->
-<!-- 									Pieces Metallic Printed -->
-<!-- 								</a> -->
-
-<!-- 								<span class="stext-105 cl3"> -->
-<!-- 									$18.96 -->
-<!-- 								</span> -->
-<!-- 							</div> -->
-
-<!-- 							<div class="block2-txt-child2 flex-r p-t-3"> -->
-<!-- 								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2"> -->
-<!-- 									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON"> -->
-<!-- 									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON"> -->
-<!-- 								</a> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item chevrolet">
-<!-- 					Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/c2.jpeg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Chevrolet
-								</a>
-
-								<span class="stext-105 cl3">
-									$75.00
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item chevrolet">
-<!-- 					Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/c1.jpeg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Chevrolet
-								</a>
-
-								<span class="stext-105 cl3">
-									$25.85
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/mercedes2.jpeg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Mercedes 2017
-								</a>
-
-								<span class="stext-105 cl3">
-									$63.16
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mercedes">
-					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/mercedes3.jpeg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Mercedes 2016
-								</a>
-
-								<span class="stext-105 cl3">
-									$63.15
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item volkswagen">
-<!-- 					Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/v2.jpeg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Volkswagen
-								</a>
-
-								<span class="stext-105 cl3">
-									$18.49
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item volkswagen">
-<!-- 					Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/v1.jpg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									volkswagen
-								</a>
-
-								<span class="stext-105 cl3">
-									$54.79
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item renault">
-<!-- 					Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/r1.jpg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Quick View
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Renault
-								</a>
-
-								<span class="stext-105 cl3">
-									$86.85
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item renault">
-<!-- 					Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
-							<img src="resources/images/r2.jpg" alt="IMG-PRODUCT">
-
-							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Renault
-							</a>
-						</div>
-
-						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-									Square Neck Back
-								</a>
-
-								<span class="stext-105 cl3">
-									$29.64
-								</span>
-							</div>
-
-							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-									<img class="icon-heart1 dis-block trans-04" src="resources/images/icons/icon-heart-01.png" alt="ICON">
-									<img class="icon-heart2 dis-block trans-04 ab-t-l" src="resources/images/icons/icon-heart-02.png" alt="ICON">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-					
-			</div>
+<!-- 			</div> -->
 			
 		
 
@@ -1514,6 +1138,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</button>
 
 				<div class="row">
+				
 					<div class="col-md-6 col-lg-7 p-b-30">
 						<div class="p-l-25 p-r-30 p-lr-0-lg">
 							<div class="wrap-slick3 flex-sb flex-w">
@@ -1521,107 +1146,69 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
 								<div class="slick3 gallery-lb">
-									<div class="item-slick3" data-thumb="resources/images/product-detail-01.jpg">
+								<c:forEach items="${catalogue}" var="rep">
+									<div class="item-slick3" data-thumb="${rep.photo}">
 										<div class="wrap-pic-w pos-relative">
-											<img src="resources/images/product-detail-01.jpg" alt="IMG-PRODUCT">
+											<img src="${rep.photo}" alt="IMG-PRODUCT">
 
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="resources/images/product-detail-01.jpg">
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="${rep.photo}">
 												<i class="fa fa-expand"></i>
 											</a>
 										</div>
 									</div>
+									</c:forEach>
+									
+<%-- 									<c:forEach items="${catalogue}" var="rep"> --%>
 
-									<div class="item-slick3" data-thumb="resources/images/product-detail-02.jpg">
-										<div class="wrap-pic-w pos-relative">
-											<img src="resources/images/product-detail-02.jpg" alt="IMG-PRODUCT">
+<%-- 									<div class="item-slick3" data-thumb="${rep.photo}"> --%>
+<!-- 										<div class="wrap-pic-w pos-relative"> -->
+<%-- 											<img src="${rep.photo}" alt="IMG-PRODUCT"> --%>
 
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="resources/images/product-detail-02.jpg">
-												<i class="fa fa-expand"></i>
-											</a>
-										</div>
-									</div>
+<!-- 											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="resources/images/product-detail-02.jpg"> -->
+<!-- 												<i class="fa fa-expand"></i> -->
+<!-- 											</a> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<%-- 									</c:forEach> --%>
+									
+<%--                                     <c:forEach items="${catalogue}" var="rep"> --%>
+<%-- 									<div class="item-slick3" data-thumb="${rep.photo}"> --%>
+<!-- 										<div class="wrap-pic-w pos-relative"> -->
+<%-- 											<img src="${rep.photo}" alt="IMG-PRODUCT"> --%>
 
-									<div class="item-slick3" data-thumb="resources/images/product-detail-03.jpg">
-										<div class="wrap-pic-w pos-relative">
-											<img src="resources/images/product-detail-03.jpg" alt="IMG-PRODUCT">
-
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="resources/images/product-detail-03.jpg">
-												<i class="fa fa-expand"></i>
-											</a>
-										</div>
-									</div>
+<!-- 											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="resources/images/product-detail-03.jpg"> -->
+<!-- 												<i class="fa fa-expand"></i> -->
+<!-- 											</a> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<%-- 									</c:forEach> --%>
 								</div>
 							</div>
 						</div>
 					</div>
 					
+					
 					<div class="col-md-6 col-lg-5 p-b-30">
 						<div class="p-r-50 p-t-5 p-lr-0-lg">
 							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
-								Lightweight Jacket
+								
 							</h4>
 
 							<span class="mtext-106 cl2">
-								$58.79
+								
 							</span>
 
 							<p class="stext-102 cl3 p-t-23">
-								Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+								
 							</p>
 							
 							<!--  -->
 							<div class="p-t-33">
 							
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-203 flex-c-m respon6">
-										Description
-									</div>
+								
 
-									<div class="size-204 respon6-next">
-										<div class="rs1-select2 bor8 bg0" >
-											
-											<input name="description" type="text" class="form-control" value="${auto.description}">
-											
-											<div class="dropDownSelect2"></div>
-										</div>
-									</div>
-								</div>
+								
 
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-203 flex-c-m respon6">
-										Color
-									</div>
-
-									<div class="size-204 respon6-next">
-										<div class="rs1-select2 bor8 bg0">
-											
-											
-											
-											<div class="dropDownSelect2"></div>
-										</div>
-									</div>
-									
-								</div>
-
-								<div class="flex-w flex-r-m p-b-10">
-									<div class="size-204 flex-w flex-m respon6-next">
-										<div class="wrap-num-product flex-w m-r-20 m-tb-10">
-											<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-												<i class="fs-16 zmdi zmdi-minus"></i>
-											</div>
-
-											<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1">
-
-											<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-												<i class="fs-16 zmdi zmdi-plus"></i>
-											</div>
-										</div>
-
-										<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-											Add to cart
-										</button>
-									</div>
-								</div>	
 							</div>
 
 							<!--  -->

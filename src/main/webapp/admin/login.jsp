@@ -76,7 +76,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="acceuil">Acceuil</a>
+								<a href="acceuilAdmin">Acceuil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html"></a></li>
 									<li><a href="home-02.html"></a></li>
@@ -85,7 +85,7 @@
 							</li>
 
 							<li>
-								<a href="acceuil">Catalogue</a>
+								<a href="catalogue">Catalogue</a>
 							</li>
 
 							<li class="label1" data-label1="hot">
@@ -343,7 +343,7 @@
 
 						<div class="bor8 m-b-20 how-pos4-parent">
 							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="login" placeholder="Your Login">
-							<img class="how-pos4 pointer-none" src="resources/images/icons/icon-email.png" alt="ICON">
+<!-- 							<img class="how-pos4 pointer-none" src="resources/images/icons/icon-email.png" alt="ICON"> -->
 						</div>
 
 						<div class="bor8 m-b-30">

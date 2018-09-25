@@ -44,7 +44,7 @@ public class AjoutServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("client/formulaire.jsp").forward(request, response);
+		request.getRequestDispatcher("admin/formulaire.jsp").forward(request, response);
 		//Etablissement de la connexion
 		con = (Connection) getServletContext().getAttribute("connexion");
 		
@@ -100,6 +100,10 @@ public class AjoutServlet extends HttpServlet {
 			essence.creerAutomobile(auto);
 			// Utilisation d'un scope pour afficher
 			request.setAttribute("catalogue", essence.findAll() );
+			// Redirection
+			RequestDispatcher rd = request.getRequestDispatcher("acceuilAdmin");
+			rd.forward(request, response);
+			
 			
 		}else if (type.equalsIgnoreCase("electrique")) {
 			auto.setMoteur(moteur);
@@ -115,15 +119,16 @@ public class AjoutServlet extends HttpServlet {
 			
 			// Utilisation d'un scope pour afficher
 			request.setAttribute("catalogue", electrique.findAll() );
+			// Redirection
+			RequestDispatcher rd = request.getRequestDispatcher("acceuilAdmin");
+			rd.forward(request, response);
+			
 			
 			
 		}else {
 			System.out.println("Veuillez choisir Essence ou Electrique");
 		}
 		
-		// Redirection
-		RequestDispatcher rd = request.getRequestDispatcher("admin/acceuil.jsp");
-		rd.forward(request, response);
 		
 		
 		

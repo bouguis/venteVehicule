@@ -20,12 +20,14 @@ public class IDaoCommandeImpl implements IDaoCommande {
 	public void ajouter(Commande t) {
 		try {
 			// Preparation de la requete
-			String sql = "INSERT INTO commande(dateCommande, client) VALUES (?,?)";
+			String sql = "INSERT INTO commande(dateCommande, idClient) VALUES (?,?)";
 			
 			// Recuperation d'une zone de requete
 			PreparedStatement pst = con.prepareStatement(sql);
 			
 			// Transmission des valeurs aux parametres de la requete
+			pst.setString(1, t.getDateCommande());
+			pst.setLong(2, t.getClient().getIdClient());
 			
 			
 			

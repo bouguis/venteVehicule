@@ -91,7 +91,7 @@
 							</li>
 
 							<li>
-								<a href="acceuil">Catalogue</a>
+								<a href="catalogue">Catalogue</a>
 							</li>
 
 <!-- 							<li class="label1" data-label1="hot"> -->
@@ -262,16 +262,16 @@
 				<ul class="header-cart-wrapitem w-full">
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
+							<img src="${auto.photo}" alt="IMG">
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
+								${auto.description}
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x $19.00
+								${auto.prix}
 							</span>
 						</div>
 					</li>
@@ -435,7 +435,7 @@
 										<p>Nomde de Place : ${auto.nbrPlace}</p><br>
 										<p>Type : ${auto.type}</p><br>
 										<p>Moteur : ${auto.moteur}</p><br>
-										<p>Prix : ${auto.prix}</p>
+										<p>Prix : ${auto.description}</p>
 										
 										<div class="dropDownSelect2"></div>
 									</div>
@@ -459,12 +459,15 @@
 									</div>
 
 									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-										Passez Commande
+										Passer Commande
+								
 									</button>
+									
 								</div>
 							</div>	
 						</div>
 						</form>
+						
 
 						<!--  -->
 						<div class="flex-w flex-m p-l-100 p-t-40 respon7">

@@ -10,9 +10,11 @@ import java.util.List;
 public class Commande {
 	//Proprietes
 	private long idCommande;
-	private Date dateCommande;
+	private String dateCommande;
 	private Client client;
 	private List<Automobile> listeAutos;
+	private Automobile auto;
+	private long idAuto;
 	
 	
 	
@@ -24,7 +26,7 @@ public class Commande {
 		super();
 	}
 
-	public Commande(long idCommande, Date dateCommande, Client client, List<Automobile> listeAutos) {
+	public Commande(long idCommande, String dateCommande, Client client, List<Automobile> listeAutos) {
 		super();
 		this.idCommande = idCommande;
 		this.dateCommande = dateCommande;
@@ -32,17 +34,26 @@ public class Commande {
 		this.listeAutos = listeAutos;
 	}
 
-	public Commande(Date dateCommande, Client client) {
+	public Commande(String dateCommande, Client client, Automobile auto) {
 		super();
 		this.dateCommande = dateCommande;
 		this.client = client;
+		this.auto = auto;
 	}
 
-	public Commande(long idCommande, Date dateCommande, Client client) {
+	public Commande(long idCommande, String dateCommande, Client client) {
 		super();
 		this.idCommande = idCommande;
 		this.dateCommande = dateCommande;
 		this.client = client;
+	}
+	
+
+	public Commande(String dateCommande, Client client) {
+		super();
+		this.dateCommande = dateCommande;
+		this.client = client;
+		
 	}
 
 	//Getters et setters
@@ -68,11 +79,11 @@ public class Commande {
 		this.idCommande = idCommande;
 	}
 
-	public Date getDateCommande() {
+	public String getDateCommande() {
 		return dateCommande;
 	}
 
-	public void setDateCommande(Date dateCommande) {
+	public void setDateCommande(String dateCommande) {
 		this.dateCommande = dateCommande;
 	}
 
@@ -82,6 +93,24 @@ public class Commande {
 
 	public void setClient(Client client) {
 		this.client = client;
+	}
+
+	
+
+	public Automobile getAuto() {
+		return auto;
+	}
+
+	public void setAuto(Automobile auto) {
+		this.auto = auto;
+	}
+
+	public long getIdAuto() {
+		return idAuto;
+	}
+
+	public void setIdAuto(long idAuto) {
+		this.idAuto = idAuto;
 	}
 
 	

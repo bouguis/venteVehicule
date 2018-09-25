@@ -74,7 +74,7 @@
 						</a>
 
 						<a href="login" class="flex-c-m trans-04 p-lr-25">
-							Se Connecter
+							Se Deconnecter
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -100,7 +100,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="acceuil">Acceuil</a>
+								<a href="acceuilAdmin">Acceuil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html"></a></li>
 									<li><a href="home-02.html"></a></li>
@@ -112,9 +112,9 @@
 								<a href="catalogue">Catalogue</a>
 							</li>
 
-<!-- 							<li class="label1" data-label1="hot"> -->
-<!-- 								<a href="ajout">Gestion Catalogue</a> -->
-<!-- 							</li> -->
+							<li class="label1" data-label1="hot">
+								<a href="ajout">Gestion Catalogue</a>
+							</li>
 
 							<li>
 								<a href="#">Solde</a>
@@ -161,11 +161,11 @@
 					<i class="zmdi zmdi-search"></i>
 				</div>
 
-				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="2">
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="">
 					<i class="zmdi zmdi-shopping-cart"></i>
 				</div>
 
-				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
+				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="">
 					<i class="zmdi zmdi-favorite-outline"></i>
 				</a>
 			</div>
