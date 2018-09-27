@@ -55,12 +55,12 @@
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+					
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Help & FAQs
+						
 						</a>
 
 						<a href="login" class="flex-c-m trans-04 p-lr-25">
@@ -68,11 +68,11 @@
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							EN
+							FR
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
+							
 						</a>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="acceuil">Acceuil</a>
+								<a href="acceuil">Accueil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html"></a></li>
 									<li><a href="home-02.html"></a></li>
@@ -107,7 +107,7 @@
 <!-- 							</li> -->
 
 							<li>
-								<a href="#">Solde</a>
+								<a href="#"></a>
 							</li>
 
 							<li>

@@ -55,6 +55,24 @@
 		<description></description>
 		<servlet-class>sn.objis.venteVehicule.presentation.FormulaireServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>DeconnecterServlet</servlet-name>
+		<display-name>DeconnecterServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.DeconnecterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ListerCommandeServlet</servlet-name>
+		<display-name>ListerCommandeServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.ListerCommandeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SupprimerServlet</servlet-name>
+		<display-name>SupprimerServlet</display-name>
+		<description></description>
+		<servlet-class>sn.objis.venteVehicule.presentation.SupprimerServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>AcceuilServlet</servlet-name>
@@ -88,6 +106,18 @@
 	<servlet-mapping>
 		<servlet-name>FormulaireServlet</servlet-name>
 		<url-pattern>/formulaire</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeconnecterServlet</servlet-name>
+		<url-pattern>/deconnecter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListerCommandeServlet</servlet-name>
+		<url-pattern>/listCommande</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SupprimerServlet</servlet-name>
+		<url-pattern>/supprimer</url-pattern>
 	</servlet-mapping>
 
 

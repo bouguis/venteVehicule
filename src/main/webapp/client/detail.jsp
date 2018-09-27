@@ -47,12 +47,12 @@
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+					
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Help & FAQs
+							
 						</a>
 
 						<a href="login" class="flex-c-m trans-04 p-lr-25">
@@ -60,11 +60,11 @@
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							EN
+							FR
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
+							
 						</a>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="acceuil">Acceuil</a>
+								<a href="acceuil">Accueil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html"></a></li>
 									<li><a href="home-02.html"></a></li>
@@ -99,7 +99,7 @@
 <!-- 							</li> -->
 
 							<li>
-								<a href="#">Solde</a>
+								<a href="#"></a>
 							</li>
 
 							<li>
@@ -143,11 +143,11 @@
 					<i class="zmdi zmdi-search"></i>
 				</div>
 
-				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="2">
+				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="">
 					<i class="zmdi zmdi-shopping-cart"></i>
 				</div>
 
-				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
+				<a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="">
 					<i class="zmdi zmdi-favorite-outline"></i>
 				</a>
 			</div>
@@ -166,26 +166,26 @@
 			<ul class="topbar-mobile">
 				<li>
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+					
 					</div>
 				</li>
 
 				<li>
 					<div class="right-top-bar flex-w h-full">
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
+							
+						</a>
+
+						<a href="login" class="flex-c-m p-lr-10 trans-04">
+							Se connecter
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							My Account
+							FR
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							EN
-						</a>
-
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							USD
+							
 						</a>
 					</div>
 				</li>
@@ -250,7 +250,7 @@
 		<div class="header-cart flex-col-l p-l-65 p-r-25">
 			<div class="header-cart-title flex-w flex-sb-m p-b-8">
 				<span class="mtext-103 cl2">
-					Your Cart
+					Votre Commande
 				</span>
 
 				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
@@ -278,32 +278,32 @@
 
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="resources/images/item-cart-02.jpg" alt="IMG">
+							
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
+								
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x $39.00
+								
 							</span>
 						</div>
 					</li>
 
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="resources/images/item-cart-03.jpg" alt="IMG">
+							
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
+								
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x $17.00
+								
 							</span>
 						</div>
 					</li>
@@ -417,7 +417,7 @@
 						<p class="stext-102 cl3 p-t-23">
 							
 						</p>
-						<form action="ajoutClient" method="get">
+						<form action="ajoutClient" method="post">
 						<!--  -->
 						<div class="p-t-33">
 							<div class="flex-w flex-r-m p-b-10">
@@ -427,15 +427,41 @@
 
 								<div class="size-204 respon6-next">
 									<div class="rs1-select2 bor8 bg0" style="padding: 15px;">
+									
+							        <div class="bor8 m-b-30">
+						          	<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="nom" placeholder="Nom">
+						           </div>
+						           <div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="prenom" placeholder="Prenom">
+						</div>
+						<div class="bor8 m-b-30">
+							 <select name="sexe" class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30">
+                                      <option value="masculin">M</option>
+                                      <option value="feminin">F</option>
+                         	 </select>
+							
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="adresse" placeholder="Adresse">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email"   placeholder="Email">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="tel" placeholder="Telephone">
+						</div>
+						
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30"  type="hidden" name="code" value=" ${auto.idAuto}">
+						</div>
+						<div class="bor8 m-b-30">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="date" placeholder="Date Commande">
+						</div>
+	
 										
-									<p>Description :	${auto.description}</p><br>
-										<p>Marque : ${auto.marque}</p><br>
-										<p>Mode : ${auto.model}</p><br>
-										<p>Couleur : ${auto.couleur}</p><br>
-										<p>Nomde de Place : ${auto.nbrPlace}</p><br>
-										<p>Type : ${auto.type}</p><br>
-										<p>Moteur : ${auto.moteur}</p><br>
-										<p>Prix : ${auto.description}</p>
 										
 										<div class="dropDownSelect2"></div>
 									</div>
@@ -446,19 +472,9 @@
 
 							<div class="flex-w flex-r-m p-b-10">
 								<div class="size-204 flex-w flex-m respon6-next">
-									<div class="wrap-num-product flex-w m-r-20 m-tb-10">
-										<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-											<i class="fs-16 zmdi zmdi-minus"></i>
-										</div>
+									
 
-										<input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1">
-
-										<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-											<i class="fs-16 zmdi zmdi-plus"></i>
-										</div>
-									</div>
-
-									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 " type="submit" name="action">
 										Passer Commande
 								
 									</button>
@@ -470,25 +486,7 @@
 						
 
 						<!--  -->
-						<div class="flex-w flex-m p-l-100 p-t-40 respon7">
-							<div class="flex-m bor9 p-r-10 m-r-11">
-								<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100" data-tooltip="Add to Wishlist">
-									<i class="zmdi zmdi-favorite"></i>
-								</a>
-							</div>
-
-							<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook">
-								<i class="fa fa-facebook"></i>
-							</a>
-
-							<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
-								<i class="fa fa-twitter"></i>
-							</a>
-
-							<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Google Plus">
-								<i class="fa fa-google-plus"></i>
-							</a>
-						</div>
+						
 					</div>
 				</div>
 			</div>

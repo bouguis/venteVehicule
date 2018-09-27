@@ -41,12 +41,12 @@
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+						
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							Help & FAQs
+							
 						</a>
 
 						<a href="login" class="flex-c-m trans-04 p-lr-25">
@@ -54,11 +54,11 @@
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							EN
+							FR
 						</a>
 
 						<a href="#" class="flex-c-m trans-04 p-lr-25">
-							USD
+							
 						</a>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="acceuil">Acceuil</a>
+								<a href="acceuil">Accueil</a>
 								<ul class="sub-menu">
 									<li><a href="index.html"></a></li>
 									<li><a href="home-02.html"></a></li>
@@ -93,7 +93,7 @@
 <!-- 							</li> -->
 
 							<li>
-								<a href="#">Solde</a>
+								<a href="#"></a>
 							</li>
 
 							<li>
@@ -101,7 +101,7 @@
 							</li>
 
 							<li class="active-menu">
-								<a href="">Nous Contactez</a>
+								<a href="#">Nous Contactez</a>
 							</li>
 						</ul>
 					</div>	
@@ -112,11 +112,11 @@
 							<i class="zmdi zmdi-search"></i>
 						</div>
 
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
+						<div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
 
-						<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
+						<a href="#" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="">
 							<i class="zmdi zmdi-favorite-outline"></i>
 						</a>
 					</div>
@@ -160,14 +160,14 @@
 			<ul class="topbar-mobile">
 				<li>
 					<div class="left-top-bar">
-						Free shipping for standard order over $100
+						
 					</div>
 				</li>
 
 				<li>
 					<div class="right-top-bar flex-w h-full">
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
+							
 						</a>
 
 						<a href="login" class="flex-c-m p-lr-10 trans-04">
@@ -175,11 +175,11 @@
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							EN
+							FR
 						</a>
 
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							USD
+							
 						</a>
 					</div>
 				</li>
@@ -187,7 +187,7 @@
 
 			<ul class="main-menu-m">
 				<li>
-					<a href="index.html">Acceuil</a>
+					<a href="index.html">Accueil</a>
 					<ul class="sub-menu-m">
 						<li><a href="index.html"></a></li>
 						<li><a href="home-02.html"></a></li>
@@ -256,48 +256,48 @@
 				<ul class="header-cart-wrapitem w-full">
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="resources/images/item-cart-01.jpg" alt="IMG">
+							<img src="" alt="IMG">
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
+								
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x $19.00
+								
 							</span>
 						</div>
 					</li>
 
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="resources/images/item-cart-02.jpg" alt="IMG">
+							<img src="" alt="IMG">
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
+								
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x $39.00
+								
 							</span>
 						</div>
 					</li>
 
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="resources/images/item-cart-03.jpg" alt="IMG">
+							<img src="" alt="IMG">
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
+								
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x $17.00
+						
 							</span>
 						</div>
 					</li>
@@ -359,7 +359,7 @@
 				<div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
 					<div class="flex-w w-full p-b-42">
 						<span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-map-marker"></span>
+						
 						</span>
 
 						<div class="size-212 p-t-2">
@@ -375,13 +375,11 @@
 
 					<div class="flex-w w-full p-b-42">
 						<span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-phone-handset"></span>
+							
 						</span>
 
 						<div class="size-212 p-t-2">
-							<span class="mtext-110 cl2">
-								
-							</span>
+							
 
 							<p class="stext-115 cl1 size-213 p-t-18">
 								
@@ -391,7 +389,7 @@
 
 					<div class="flex-w w-full">
 						<span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-envelope"></span>
+							
 						</span>
 
 						<div class="size-212 p-t-2">

@@ -1,6 +1,7 @@
 package sn.objis.venteVehicule.service;
 
 import java.sql.Connection;
+import java.util.List;
 
 import sn.objis.venteVehicule.dao.IDaoClientImpl;
 import sn.objis.venteVehicule.dao.IDaoCommandeImpl;
@@ -28,6 +29,13 @@ public class CommandePassee {
 		daocommande.ajouter(t);
 		
 	}
+	public List<Commande> visualiserCommande(){
+		return daocommande.getAll();
+		
+	}
 	
+	public void supprimerCommande(Commande t) {
+		daocommande.delete(t);
+	}
 	
 }

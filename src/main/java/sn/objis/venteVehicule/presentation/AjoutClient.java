@@ -67,7 +67,8 @@ public class AjoutClient extends HttpServlet {
 		String tel = request.getParameter("tel");
 		String codeClient = request.getParameter("code");
 
-		String dateCommande = request.getParameter("dateCommande");
+		String dateCommande = request.getParameter("date");
+		String idAuto = request.getParameter("code") ;
 		
 
 		// Etablissement de la connexion
@@ -78,11 +79,11 @@ public class AjoutClient extends HttpServlet {
 
 		Client client = new Client(nom, prenom, sexe, adresse, email, tel, codeClient);
 		ajoutclient.ajoutClient(client);
-		Commande commande = new Commande(dateCommande, client);
+		Commande commande = new Commande(dateCommande, idAuto,email,tel);
 		ajoutclient.valideCommande(commande);
 
 		// Redirection
-		RequestDispatcher rd = request.getRequestDispatcher("client/acceuil.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("catalogue");
 		rd.forward(request, response);
 
 	}

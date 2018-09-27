@@ -1,6 +1,5 @@
 package sn.objis.venteVehicule.domaine;
 
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -13,8 +12,10 @@ public class Commande {
 	private String dateCommande;
 	private Client client;
 	private List<Automobile> listeAutos;
-	private Automobile auto;
-	private long idAuto;
+	private String auto;
+	private String emailClient;
+	private String telClient;
+	
 	
 	
 	
@@ -34,30 +35,27 @@ public class Commande {
 		this.listeAutos = listeAutos;
 	}
 
-	public Commande(String dateCommande, Client client, Automobile auto) {
+	public Commande(String dateCommande, String auto, String emailClent, String telClient) {
 		super();
 		this.dateCommande = dateCommande;
-		this.client = client;
-		this.auto = auto;
+		this.emailClient=emailClent;
+		this.setAuto(auto);
+		this.telClient=telClient;
+		
 	}
 
-	public Commande(long idCommande, String dateCommande, Client client) {
+	public Commande(long idCommande, String dateCommande, String auto, String emailClient, String telClient) {
 		super();
 		this.idCommande = idCommande;
 		this.dateCommande = dateCommande;
-		this.client = client;
-	}
-	
-
-	public Commande(String dateCommande, Client client) {
-		super();
-		this.dateCommande = dateCommande;
-		this.client = client;
-		
+		this.auto = auto;
+		this.emailClient = emailClient;
+		this.telClient = telClient;
 	}
 
 	//Getters et setters
 	
+
 
 	public long getIdCommande() {
 		return idCommande;
@@ -95,24 +93,38 @@ public class Commande {
 		this.client = client;
 	}
 
-	
-
-	public Automobile getAuto() {
+	public String getAuto() {
 		return auto;
 	}
 
-	public void setAuto(Automobile auto) {
+	public void setAuto(String auto) {
 		this.auto = auto;
 	}
 
-	public long getIdAuto() {
-		return idAuto;
+	public String getEmailClient() {
+		return emailClient;
 	}
 
-	public void setIdAuto(long idAuto) {
-		this.idAuto = idAuto;
+	public void setEmailClient(String emailClient) {
+		this.emailClient = emailClient;
 	}
 
+	public String getTelClient() {
+		return telClient;
+	}
+
+	public void setTelClient(String telClient) {
+		this.telClient = telClient;
+	}
+
+	
+
+	
+
+	
+
+	
+	
 	
 	
 	
